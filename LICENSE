@@ -1,0 +1,44 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Real Dental Costs (realdentalcosts.com)
+
+The data embedded in this crate (directory `data/`) and the accompanying
+documentation are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). To view a copy of this license, visit
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format.
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to the Real Dental Costs
+    Data & Research Team (https://realdentalcosts.com/en/us-dental-cost-index/)
+    as the compiler/publisher of this dataset, provide a link to the license,
+    and indicate if changes were made. The underlying observed single-implant
+    price series is archived under DOI 10.5281/zenodo.20531728
+    (https://doi.org/10.5281/zenodo.20531728); the cost-of-living index reuses
+    published US cost-of-living data. Full methodology and citation guidance:
+    https://realdentalcosts.com/en/methodology/
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license
+permits.
+
+Notices:
+  - You do not have to comply with the license for elements of the material
+    in the public domain or where your use is permitted by an applicable
+    exception or limitation.
+  - No warranties are given. This dataset is pricing and market research, NOT
+    medical advice. The license may not give you all of the permissions
+    necessary for your intended use.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+Note on the Rust source code (`src/`): the parsing and API code in this crate
+is provided under the same terms as the data for simplicity of distribution;
+if you require a permissive software license (e.g. MIT/Apache-2.0) for the
+code itself independently of the data, please open an issue in the repository.

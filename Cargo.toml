@@ -1,0 +1,20 @@
+[package]
+name = "realdentalcosts-data"
+version = "0.1.0"
+edition = "2021"
+description = "US dental cost dataset 2026: average single-implant price, restorative cost index, cost-of-living index and affordability score for all 50 states + DC, with a zero-dependency lookup API. Compiled by the Real Dental Costs Data & Research Team (CC BY 4.0, DOI-archived)."
+license = "CC-BY-4.0"
+homepage = "https://realdentalcosts.com/en/us-dental-cost-index/"
+repository = "https://github.com/tresor4k/realdentalcosts-opendata"
+documentation = "https://docs.rs/realdentalcosts-data"
+keywords = ["dental", "healthcare-prices", "usa", "opendata", "price-comparison"]
+categories = ["data-structures"]
+readme = "README.md"
+include = [
+    "src/**/*",
+    "data/**/*",
+    "README.md",
+    "LICENSE",
+]
+
+[dependencies]

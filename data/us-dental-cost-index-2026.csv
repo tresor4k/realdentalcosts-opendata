@@ -1,0 +1,52 @@
+rank,state,code,implant_avg_usd,restorative_index,cost_of_living_index,affordability_score
+1,Alabama,AL,3759,83,88.8,50
+2,Arkansas,AR,3833,85,86,62
+3,Mississippi,MS,3885,86,84,54
+4,Kentucky,KY,3948,88,91,71
+5,West Virginia,WV,3969,88,89,73
+6,Iowa,IA,3990,89,89,73
+7,Kansas,KS,4032,89,87.5,59
+8,Oklahoma,OK,4053,90,86,60
+9,Indiana,IN,4095,91,90,56
+10,South Dakota,SD,4095,91,97,64
+11,Louisiana,LA,4137,92,92,54
+12,Nebraska,NE,4158,92,92,68
+13,South Carolina,SC,4158,92,91,54
+14,Georgia,GA,4179,93,95,50
+15,Missouri,MO,4179,93,90,55
+16,Tennessee,TN,4179,93,90.5,70
+17,North Dakota,ND,4200,93,92,68
+18,Ohio,OH,4200,93,91.5,69
+19,North Carolina,NC,4242,94,96,64
+20,Michigan,MI,4305,96,92.5,67
+21,New Mexico,NM,4305,96,93,66
+22,Wisconsin,WI,4326,96,93,66
+23,Utah,UT,4347,96,96,38
+24,Idaho,ID,4368,97,94,65
+25,Minnesota,MN,4410,98,98,60
+26,Texas,TX,4410,98,93,40
+27,Wyoming,WY,4452,99,92,51
+28,Arizona,AZ,4490,100,96,37
+29,Florida,FL,4515,100,98,34
+30,Montana,MT,4515,100,94,63
+31,Colorado,CO,4538,101,101,56
+32,Virginia,VA,4578,102,99,33
+33,Illinois,IL,4589,102,98,59
+34,Maine,ME,4620,103,103,54
+35,Pennsylvania,PA,4620,103,99,58
+36,Connecticut,CT,4683,104,108,48
+37,Oregon,OR,4725,105,112,44
+38,Vermont,VT,4788,106,106,49
+39,Delaware,DE,4820,107,99,41
+40,Nevada,NV,4830,107,99,41
+41,Rhode Island,RI,4830,107,107,48
+42,Maryland,MD,4935,109,116,38
+43,Washington,WA,4935,109,111,43
+44,New Hampshire,NH,4998,111,105,48
+45,New Jersey,NJ,5040,112,110,43
+46,Massachusetts,MA,5145,114,129,23
+47,District of Columbia,DC,5250,116,141,10
+48,Alaska,AK,5450,121,123,27
+49,Hawaii,HI,5460,121,184,10
+50,New York,NY,5565,123,123.3,25
+51,California,CA,5733,127,137.6,10
