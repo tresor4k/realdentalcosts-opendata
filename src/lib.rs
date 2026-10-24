@@ -1,21 +1,30 @@
 //! This crate embeds the 2026 United States dental cost index compiled by the
 //! [Real Dental Costs Data & Research Team](https://realdentalcosts.com/en/us-dental-cost-index/)
-//! — the average single dental-implant price, a restorative cost index, a cost-of-living
-//! index and an affordability score for the 50 states plus the District of Columbia — and
-//! exposes a small, zero-dependency Rust API to query it. The source CSV is embedded in the
-//! binary via `include_str!` and parsed on demand by a tiny internal parser.
+//! — an estimated single dental-implant price, a restorative cost index, a cost-of-living
+//! index and a deprecated affordability score for the 50 states plus the District of
+//! Columbia — and exposes a small, zero-dependency Rust API to query it. The source CSV is
+//! embedded in the binary via `include_str!` and parsed on demand by a tiny internal parser.
+//!
+//! # Correction (version 0.1.1, October 2026)
+//!
+//! Version 0.1.0 described the implant series as observed prices. That was wrong. The
+//! `implant_avg_usd` column is an **editorial estimate, edition 2026.1, not collected
+//! prices**: the state ranking was validated against an independent price series (ASQ360,
+//! Spearman 0.945), the dollar levels were not verified. The values themselves are
+//! unchanged in this release. Details:
+//! [data corrections notice](https://realdentalcosts.com/en/data-corrections/).
+//!
+//! The `affordability_score` was retired from realdentalcosts.com in October 2026 because
+//! one of its components has no documented source. The field stays in [`StateRow`] so that
+//! existing code keeps compiling; do not use it for new work.
 //!
 //! # Where the numbers come from
 //!
-//! The figures are not invented or modelled. The `implant_avg_usd` column is the observed
-//! average price of a single dental implant per state, drawn from the Real Dental Costs
-//! open dataset archived under DOI
-//! [10.5281/zenodo.20531728](https://doi.org/10.5281/zenodo.20531728) (concept DOI, version 2 —
-//! see the [data corrections notice](https://realdentalcosts.com/en/data-corrections/)). The
-//! `restorative_index` is a base-100 index derived from that validated implant series; the
-//! `cost_of_living_index` reuses published US cost-of-living data; the `affordability_score`
-//! (0–100, lower = less affordable) combines price against local incomes. The full
-//! methodology and copy-paste citations are on the
+//! The `implant_avg_usd` column comes from the Real Dental Costs dataset archived under DOI
+//! [10.5281/zenodo.20531728](https://doi.org/10.5281/zenodo.20531728) (concept DOI). The
+//! `restorative_index` is a base-100 index derived from that same estimate; the dataset also
+//! carries a state `cost_of_living_index` (US average = 100). The full methodology and
+//! copy-paste citations are on the
 //! [methodology page](https://realdentalcosts.com/en/methodology/) and the
 //! [cite-this-data page](https://realdentalcosts.com/en/cite-this-data/).
 //!
@@ -27,16 +36,14 @@
 //! the interactive [US Dental Cost Index](https://realdentalcosts.com/en/us-dental-cost-index/)
 //! and the annual
 //! [State of US Dental Costs 2026 report](https://realdentalcosts.com/en/state-of-us-dental-costs-2026/)
-//! on realdentalcosts.com, with per-state pages such as
-//! [California — the priciest state for implants](https://realdentalcosts.com/en/california/).
-//! The national average single-implant price in this edition is $4,507.
+//! on realdentalcosts.com. The national average of the estimate in this edition is $4,507.
 //!
 //! # Example
 //!
 //! ```rust
 //! use realdentalcosts_data::{states, state, cheapest_states, priciest_states};
 //!
-//! // Alabama: cheapest state for a single implant; California: priciest.
+//! // Alabama: lowest estimate for a single implant; California: highest.
 //! let al = state("AL").unwrap();
 //! assert_eq!(al.rank, 1);
 //! assert_eq!(al.implant_avg_usd, 3759);
@@ -54,19 +61,21 @@
 /// One state-level row of the 2026 US dental cost index (50 states + DC).
 #[derive(Debug, Clone, PartialEq)]
 pub struct StateRow {
-    /// National rank by average implant price (1 = cheapest, 51 = priciest).
+    /// National rank by estimated implant price (1 = lowest, 51 = highest).
     pub rank: u32,
     /// Full state name, e.g. `"California"`.
     pub state_name: &'static str,
     /// Two-letter USPS code, e.g. `"CA"`.
     pub state_code: &'static str,
-    /// Average price of a single dental implant in the state, US dollars.
+    /// Estimated price of a single dental implant in the state, US dollars: editorial
+    /// estimate, edition 2026.1, not collected prices (see the crate-level correction note).
     pub implant_avg_usd: u32,
-    /// Restorative cost index, base 100 (derived from the validated implant series).
+    /// Restorative cost index, base 100 (derived from the implant estimate).
     pub restorative_index: u32,
     /// Cost-of-living index (US average = 100).
     pub cost_of_living_index: f64,
-    /// Affordability score, 0–100 (lower = less affordable relative to local incomes).
+    /// Deprecated: affordability score, 0–100, retired from realdentalcosts.com in
+    /// October 2026 (one component has no documented source). Kept for compatibility only.
     pub affordability_score: u32,
 }
 
@@ -125,7 +134,8 @@ pub fn state(code: &str) -> Option<StateRow> {
     states().into_iter().find(|s| s.state_code == code)
 }
 
-/// The `n` cheapest states for a single implant, ascending by price.
+/// The `n` states with the lowest implant estimate, ascending (editorial estimate, not
+/// collected prices).
 pub fn cheapest_states(n: usize) -> Vec<StateRow> {
     let mut all = states();
     all.sort_by(|a, b| a.implant_avg_usd.cmp(&b.implant_avg_usd));
@@ -133,7 +143,8 @@ pub fn cheapest_states(n: usize) -> Vec<StateRow> {
     all
 }
 
-/// The `n` priciest states for a single implant, descending by price.
+/// The `n` states with the highest implant estimate, descending (editorial estimate, not
+/// collected prices).
 pub fn priciest_states(n: usize) -> Vec<StateRow> {
     let mut all = states();
     all.sort_by(|a, b| b.implant_avg_usd.cmp(&a.implant_avg_usd));
@@ -141,7 +152,11 @@ pub fn priciest_states(n: usize) -> Vec<StateRow> {
     all
 }
 
-/// The `n` most affordable states (highest affordability score), descending.
+/// The `n` states with the highest affordability score, descending.
+#[deprecated(
+    since = "0.1.1",
+    note = "the affordability score was retired in October 2026: one component has no documented source"
+)]
 pub fn most_affordable_states(n: usize) -> Vec<StateRow> {
     let mut all = states();
     all.sort_by(|a, b| b.affordability_score.cmp(&a.affordability_score));
@@ -175,6 +190,7 @@ mod tests {
     }
 
     #[test]
+    #[allow(deprecated)]
     fn ranking_is_monotonic() {
         let all = states();
         for w in all.windows(2) {

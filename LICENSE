@@ -16,10 +16,11 @@ Under the following terms:
   - Attribution — You must give appropriate credit to the Real Dental Costs
     Data & Research Team (https://realdentalcosts.com/en/us-dental-cost-index/)
     as the compiler/publisher of this dataset, provide a link to the license,
-    and indicate if changes were made. The underlying observed single-implant
-    price series is archived under DOI 10.5281/zenodo.20531728
-    (https://doi.org/10.5281/zenodo.20531728); the cost-of-living index reuses
-    published US cost-of-living data. Full methodology and citation guidance:
+    and indicate if changes were made. The underlying single-implant price series
+    is an editorial estimate (edition 2026.1, not collected prices), archived
+    under DOI 10.5281/zenodo.20531728 (https://doi.org/10.5281/zenodo.20531728);
+    the dataset also carries a state cost-of-living index (US average = 100).
+    Full methodology and citation guidance:
     https://realdentalcosts.com/en/methodology/
 
 No additional restrictions — You may not apply legal terms or technological

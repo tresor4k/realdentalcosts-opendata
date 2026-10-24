@@ -2,11 +2,16 @@
 
 US dental cost index, 2026 — embedded as CSV, queried through a zero-dependency Rust API.
 
-- **51 states/DC**: average single-implant price, restorative cost index (base 100),
-  cost-of-living index, and affordability score.
-- The `implant_avg_usd` series is observed price data, archived under DOI
-  [10.5281/zenodo.20531728](https://doi.org/10.5281/zenodo.20531728) (version 2 — see the
-  [data corrections notice](https://realdentalcosts.com/en/data-corrections/)).
+- **51 states/DC**: estimated single-implant price, restorative cost index (base 100),
+  cost-of-living index, and a deprecated affordability score.
+- **Correction (0.1.1, October 2026).** Version 0.1.0 called the `implant_avg_usd` series observed
+  price data. That was wrong: it is an **editorial estimate, edition 2026.1, not collected prices**.
+  The state ranking was validated against an independent price series (ASQ360, Spearman 0.945); the
+  dollar levels were not verified. Values are unchanged. See the
+  [data corrections notice](https://realdentalcosts.com/en/data-corrections/).
+- The `affordability_score` was retired from realdentalcosts.com in October 2026 (one component has no
+  documented source). The field stays for compatibility; `most_affordable_states` is deprecated.
+- Archived under DOI [10.5281/zenodo.20531728](https://doi.org/10.5281/zenodo.20531728) (concept DOI).
 - Compiled by the
   [Real Dental Costs Data & Research Team](https://realdentalcosts.com/en/us-dental-cost-index/)
   — the dataset behind the interactive
@@ -18,10 +23,10 @@ US dental cost index, 2026 — embedded as CSV, queried through a zero-dependenc
 ```rust
 use realdentalcosts_data::{state, cheapest_states, priciest_states};
 
-let al = state("AL").unwrap();       // Alabama — $3,759, cheapest for a single implant
-let ca = state("CA").unwrap();       // California — $5,733, the priciest
-let top5 = cheapest_states(5);       // AL, AR, MS, KY, WV…
-let worst5 = priciest_states(5);     // CA, NY, HI, AK, DC…
+let al = state("AL").unwrap();       // Alabama: lowest implant estimate ($3,759)
+let ca = state("CA").unwrap();       // California: highest implant estimate ($5,733)
+let low5 = cheapest_states(5);       // AL, AR, MS, KY, WV…
+let high5 = priciest_states(5);      // CA, NY, HI, AK, DC…
 ```
 
 This is pricing and market-research data, **not** medical advice.
