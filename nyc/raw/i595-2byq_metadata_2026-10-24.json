@@ -1,0 +1,1186 @@
+{
+  "id" : "i595-2byq",
+  "name" : "Radiation Producing Equipment",
+  "assetType" : "dataset",
+  "attribution" : "Department of Health and Mental Hygiene",
+  "averageRating" : 0,
+  "category" : "Health",
+  "createdAt" : 1579278973,
+  "description" : "This dataset consists of registrations for radiation producing equipment. The owner or operator of any radiation installation or of any radiation equipment in operable condition intended to be used for patient clinical diagnosis and/or treatment must obtain a current Radiation Producing Equipment - Certificate of Registration from the NYC Department of Health and Mental Hygiene (DOHMH) in order to establish (set up), maintain or operate such equipment. Registrations are categorized by facility and must be renewed every two years.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 30616,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 33377310,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1580401995,
+  "publicationGroup" : 16839550,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1580401995,
+  "tableId" : 16861366,
+  "totalTimesRated" : 0,
+  "viewCount" : 4783,
+  "viewLastModified" : 1580402365,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1580402294,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 1807414,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1580402294,
+    "targetAudience" : "public",
+    "workflowId" : 2285,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1580402295,
+      "failureCount" : 0,
+      "startedAt" : 1580402294,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "5fuc-pqz2",
+      "displayName" : "NYC OpenData"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 449387427,
+    "name" : "ORIGID",
+    "dataTypeName" : "text",
+    "description" : "Unique identifier for the facility; 8-digit integer, static per radiation equipment permit",
+    "fieldName" : "origid",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553716,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "91-3730-01",
+      "null" : "0",
+      "top" : [ {
+        "item" : "50037599",
+        "count" : "1"
+      }, {
+        "item" : "41429761",
+        "count" : "1"
+      }, {
+        "item" : "40845242",
+        "count" : "1"
+      }, {
+        "item" : "40503463",
+        "count" : "1"
+      }, {
+        "item" : "40952390",
+        "count" : "1"
+      }, {
+        "item" : "40502756",
+        "count" : "1"
+      }, {
+        "item" : "41504160",
+        "count" : "1"
+      }, {
+        "item" : "50074168",
+        "count" : "1"
+      }, {
+        "item" : "41163430",
+        "count" : "1"
+      }, {
+        "item" : "40501261",
+        "count" : "1"
+      }, {
+        "item" : "41020693",
+        "count" : "1"
+      }, {
+        "item" : "50065786",
+        "count" : "1"
+      }, {
+        "item" : "50081285",
+        "count" : "1"
+      }, {
+        "item" : "91-3634-01",
+        "count" : "1"
+      }, {
+        "item" : "41001497",
+        "count" : "1"
+      }, {
+        "item" : "50079455",
+        "count" : "1"
+      }, {
+        "item" : "40502913",
+        "count" : "1"
+      }, {
+        "item" : "41374574",
+        "count" : "1"
+      }, {
+        "item" : "50066803",
+        "count" : "1"
+      }, {
+        "item" : "50058427",
+        "count" : "1"
+      } ],
+      "smallest" : "40494145",
+      "count" : "6444",
+      "cardinality" : "6444"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387428,
+    "name" : "NAME",
+    "dataTypeName" : "text",
+    "description" : "Name of facility",
+    "fieldName" : "name",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553722,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "ZWIEBEL NEIL - DPM",
+      "null" : "0",
+      "top" : [ {
+        "item" : "CITY MEDICAL OF UPPER EAST SIDE PLLC",
+        "count" : "47"
+      }, {
+        "item" : "SUNSET PARK HEALTH COUNCIL INC",
+        "count" : "35"
+      }, {
+        "item" : "MONTEFIORE MEDICAL CENTER",
+        "count" : "17"
+      }, {
+        "item" : "PROHEALTH URGENT CARE MEDICINE PLLC",
+        "count" : "15"
+      }, {
+        "item" : "LENOX HILL RADIOLOGY AND MEDICAL IMAGING ASSOCIATES PC",
+        "count" : "13"
+      }, {
+        "item" : "LENOX HILL RADIOLOGY & MEDICAL IMAGING ASSOCIATES PC",
+        "count" : "9"
+      }, {
+        "item" : "LENOX HILL RADIOLOGY AND MEDICAL IMAGING ASSOCIATES P.C.",
+        "count" : "9"
+      }, {
+        "item" : "TRUE NORTH URGENT CARE LLC",
+        "count" : "9"
+      }, {
+        "item" : "NATIONAL DENTAL PLLC",
+        "count" : "8"
+      }, {
+        "item" : "THE INSTITUTE FOR FAMILY HEALTH",
+        "count" : "7"
+      }, {
+        "item" : "PROHEALTH CARE ASSOCIATES LLP",
+        "count" : "6"
+      }, {
+        "item" : "ASNIS DENTAL PLLC",
+        "count" : "6"
+      }, {
+        "item" : "MELNICK JOHN - M.D.",
+        "count" : "6"
+      }, {
+        "item" : "Steven Mendelsohn M.D.",
+        "count" : "5"
+      }, {
+        "item" : "CITY PRACTICE GROUP OF NEW YORK LLC",
+        "count" : "5"
+      }, {
+        "item" : "DISTINGUISHED DIAGNOSTIC IMAGING PC",
+        "count" : "5"
+      }, {
+        "item" : "PREMIER HEALTHCARE INC",
+        "count" : "5"
+      }, {
+        "item" : "BENJAMIN THOMAS E. - DDS",
+        "count" : "5"
+      }, {
+        "item" : "DENTSERV DENTAL SERVICES PC",
+        "count" : "5"
+      }, {
+        "item" : "DENTSERV DENTAL SERVICES",
+        "count" : "5"
+      } ],
+      "smallest" : "116 DENTAL CARE PLLC",
+      "count" : "6444",
+      "cardinality" : "5902"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387429,
+    "name" : "ADDRESS",
+    "dataTypeName" : "text",
+    "description" : "Building number and street name for facility location",
+    "fieldName" : "address",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553721,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "9 SANDBORN ST",
+      "null" : "0",
+      "top" : [ {
+        "item" : "121 EAST 60 STREET",
+        "count" : "8"
+      }, {
+        "item" : "119 WEST 57 STREET",
+        "count" : "7"
+      }, {
+        "item" : "133 EAST 58 STREET",
+        "count" : "6"
+      }, {
+        "item" : "30 EAST 40 STREET",
+        "count" : "6"
+      }, {
+        "item" : "30 CENTRAL PARK SOUTH",
+        "count" : "5"
+      }, {
+        "item" : "115 LATHROP AVE APT 1L",
+        "count" : "5"
+      }, {
+        "item" : "200 WEST 57 STREET",
+        "count" : "5"
+      }, {
+        "item" : "560 FIRST AVE",
+        "count" : "4"
+      }, {
+        "item" : "1790 BROADWAY",
+        "count" : "4"
+      }, {
+        "item" : "57 WEST 57 STREET",
+        "count" : "4"
+      }, {
+        "item" : "380 2ND AVE",
+        "count" : "4"
+      }, {
+        "item" : "580 PARK AVENUE",
+        "count" : "4"
+      }, {
+        "item" : "115 EAST 61 STREET",
+        "count" : "4"
+      }, {
+        "item" : "16 E 52ND ST STE 1101",
+        "count" : "4"
+      }, {
+        "item" : "110 E 40TH ST RM 706",
+        "count" : "3"
+      }, {
+        "item" : "2627 Hylan Blvd",
+        "count" : "3"
+      }, {
+        "item" : "475 SEAVIEW AVENUE",
+        "count" : "3"
+      }, {
+        "item" : "136-20 38 AVENUE",
+        "count" : "3"
+      }, {
+        "item" : "525 EAST 68TH STREET",
+        "count" : "3"
+      }, {
+        "item" : "211 E 43RD ST RM 1304",
+        "count" : "3"
+      } ],
+      "smallest" : "1000 10 AVENUE X-RAY DEPT.",
+      "count" : "6444",
+      "cardinality" : "6053"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387430,
+    "name" : "BOROUGH",
+    "dataTypeName" : "text",
+    "description" : "Borough of facility; NOTE: There may be discrepancies between zip code and listed boro due to differences in an establishment's mailing address and physical location",
+    "fieldName" : "borough",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553720,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "WOODSIDE",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NEW YORK",
+        "count" : "2128"
+      }, {
+        "item" : "BROOKLYN",
+        "count" : "1599"
+      }, {
+        "item" : "BRONX",
+        "count" : "584"
+      }, {
+        "item" : "STATEN ISLAND",
+        "count" : "376"
+      }, {
+        "item" : "FLUSHING",
+        "count" : "286"
+      }, {
+        "item" : "FOREST HILLS",
+        "count" : "137"
+      }, {
+        "item" : "ASTORIA",
+        "count" : "125"
+      }, {
+        "item" : "QUEENS",
+        "count" : "108"
+      }, {
+        "item" : "BAYSIDE",
+        "count" : "98"
+      }, {
+        "item" : "ELMHURST",
+        "count" : "93"
+      }, {
+        "item" : "JACKSON HEIGHTS",
+        "count" : "93"
+      }, {
+        "item" : "JAMAICA",
+        "count" : "87"
+      }, {
+        "item" : "REGO PARK",
+        "count" : "69"
+      }, {
+        "item" : "WOODSIDE",
+        "count" : "42"
+      }, {
+        "item" : "RIDGEWOOD",
+        "count" : "36"
+      }, {
+        "item" : "FRESH MEADOWS",
+        "count" : "33"
+      }, {
+        "item" : "HOWARD BEACH",
+        "count" : "33"
+      }, {
+        "item" : "CORONA",
+        "count" : "30"
+      }, {
+        "item" : "LONG ISLAND CITY",
+        "count" : "27"
+      }, {
+        "item" : "SOUTH RICHMOND HILL",
+        "count" : "26"
+      } ],
+      "smallest" : "ARVERNE",
+      "count" : "6444",
+      "cardinality" : "70"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387441,
+    "name" : "ZIPCODE",
+    "dataTypeName" : "text",
+    "description" : "Zip code of facility location",
+    "fieldName" : "zipcode",
+    "position" : 5,
+    "renderTypeName" : "text",
+    "tableColumnId" : 94068141,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "92660",
+      "null" : "0",
+      "top" : [ {
+        "item" : "10022",
+        "count" : "223"
+      }, {
+        "item" : "10016",
+        "count" : "209"
+      }, {
+        "item" : "10019",
+        "count" : "204"
+      }, {
+        "item" : "11375",
+        "count" : "145"
+      }, {
+        "item" : "10065",
+        "count" : "141"
+      }, {
+        "item" : "11229",
+        "count" : "140"
+      }, {
+        "item" : "11209",
+        "count" : "131"
+      }, {
+        "item" : "11235",
+        "count" : "125"
+      }, {
+        "item" : "11354",
+        "count" : "114"
+      }, {
+        "item" : "11201",
+        "count" : "109"
+      }, {
+        "item" : "10017",
+        "count" : "104"
+      }, {
+        "item" : "11373",
+        "count" : "99"
+      }, {
+        "item" : "11372",
+        "count" : "99"
+      }, {
+        "item" : "11355",
+        "count" : "94"
+      }, {
+        "item" : "10461",
+        "count" : "94"
+      }, {
+        "item" : "10314",
+        "count" : "91"
+      }, {
+        "item" : "10013",
+        "count" : "90"
+      }, {
+        "item" : "10021",
+        "count" : "80"
+      }, {
+        "item" : "11220",
+        "count" : "80"
+      }, {
+        "item" : "10003",
+        "count" : "78"
+      } ],
+      "smallest" : "10001",
+      "count" : "6444",
+      "cardinality" : "221"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387432,
+    "name" : "Facility Type",
+    "dataTypeName" : "text",
+    "description" : "Type of radiation producing equipment facility",
+    "fieldName" : "facility_type",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553718,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "Veterinary X-Ray",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Dental X-Ray",
+        "count" : "3871"
+      }, {
+        "item" : "Non-Hospital X-Ray",
+        "count" : "1294"
+      }, {
+        "item" : "Podiatric X-Ray",
+        "count" : "355"
+      }, {
+        "item" : "Dental CBCT X-Ray",
+        "count" : "288"
+      }, {
+        "item" : "Radioactive Materials",
+        "count" : "284"
+      }, {
+        "item" : "Veterinary X-Ray",
+        "count" : "212"
+      }, {
+        "item" : "Hospital X-Ray",
+        "count" : "90"
+      }, {
+        "item" : "Linear Accelerator",
+        "count" : "50"
+      } ],
+      "smallest" : "Dental CBCT X-Ray",
+      "count" : "6444",
+      "cardinality" : "8"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387433,
+    "name" : "Latitude",
+    "dataTypeName" : "number",
+    "description" : "Latitude of the radiation producing equipment facility; Coordinate location north or south of the equator; Degrees and minutes",
+    "fieldName" : "latitude",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 93553715,
+    "cachedContents" : {
+      "non_null" : "6425",
+      "largest" : "40.910679",
+      "null" : "19",
+      "top" : [ {
+        "item" : "40.751371",
+        "count" : "32"
+      }, {
+        "item" : "40.765006",
+        "count" : "32"
+      }, {
+        "item" : "40.763171",
+        "count" : "28"
+      }, {
+        "item" : "40.763719",
+        "count" : "28"
+      }, {
+        "item" : "40.761703",
+        "count" : "25"
+      }, {
+        "item" : "40.764655",
+        "count" : "25"
+      }, {
+        "item" : "40.758782",
+        "count" : "18"
+      }, {
+        "item" : "40.764047",
+        "count" : "17"
+      }, {
+        "item" : "40.765628",
+        "count" : "17"
+      }, {
+        "item" : "40.763863",
+        "count" : "17"
+      }, {
+        "item" : "40.750528",
+        "count" : "14"
+      }, {
+        "item" : "40.717217",
+        "count" : "14"
+      }, {
+        "item" : "40.759665",
+        "count" : "14"
+      }, {
+        "item" : "40.759404",
+        "count" : "12"
+      }, {
+        "item" : "40.765497",
+        "count" : "12"
+      }, {
+        "item" : "40.755595",
+        "count" : "12"
+      }, {
+        "item" : "40.737456",
+        "count" : "11"
+      }, {
+        "item" : "40.757904",
+        "count" : "11"
+      }, {
+        "item" : "40.757082",
+        "count" : "10"
+      }, {
+        "item" : "40.760962",
+        "count" : "10"
+      } ],
+      "smallest" : "40.501179",
+      "count" : "6444",
+      "cardinality" : "4730"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387434,
+    "name" : "Longitude",
+    "dataTypeName" : "number",
+    "description" : "Longitude of the radiation producing equipment facility; Coordinate location east or west of the meridian at Greenwich, England. Degrees and minutes",
+    "fieldName" : "longitude",
+    "position" : 8,
+    "renderTypeName" : "number",
+    "tableColumnId" : 93553714,
+    "cachedContents" : {
+      "non_null" : "6425",
+      "largest" : "-73.706795",
+      "null" : "19",
+      "top" : [ {
+        "item" : "-73.974687",
+        "count" : "32"
+      }, {
+        "item" : "-73.979886",
+        "count" : "32"
+      }, {
+        "item" : "-73.968446",
+        "count" : "28"
+      }, {
+        "item" : "-73.975741",
+        "count" : "28"
+      }, {
+        "item" : "-73.977972",
+        "count" : "25"
+      }, {
+        "item" : "-73.968862",
+        "count" : "25"
+      }, {
+        "item" : "-73.977036",
+        "count" : "18"
+      }, {
+        "item" : "-73.968164",
+        "count" : "17"
+      }, {
+        "item" : "-73.980315",
+        "count" : "17"
+      }, {
+        "item" : "-73.970576",
+        "count" : "17"
+      }, {
+        "item" : "-74.000602",
+        "count" : "14"
+      }, {
+        "item" : "-73.973783",
+        "count" : "14"
+      }, {
+        "item" : "-73.977890",
+        "count" : "14"
+      }, {
+        "item" : "-73.978011",
+        "count" : "12"
+      }, {
+        "item" : "-73.975393",
+        "count" : "12"
+      }, {
+        "item" : "-73.876222",
+        "count" : "11"
+      }, {
+        "item" : "-73.979288",
+        "count" : "11"
+      }, {
+        "item" : "-73.830280",
+        "count" : "10"
+      }, {
+        "item" : "-73.976145",
+        "count" : "10"
+      }, {
+        "item" : "-73.971784",
+        "count" : "10"
+      } ],
+      "smallest" : "-74.241331",
+      "count" : "6444",
+      "cardinality" : "4732"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387435,
+    "name" : "Community Board",
+    "dataTypeName" : "text",
+    "description" : "Community Board of the radiation producing equipment facility; An autonomous City agency representing the needs local community in city planning and budgeting.",
+    "fieldName" : "community_board",
+    "position" : 9,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553713,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "NULL",
+      "null" : "0",
+      "top" : [ {
+        "item" : "105",
+        "count" : "560"
+      }, {
+        "item" : "108",
+        "count" : "421"
+      }, {
+        "item" : "106",
+        "count" : "315"
+      }, {
+        "item" : "407",
+        "count" : "286"
+      }, {
+        "item" : "315",
+        "count" : "238"
+      }, {
+        "item" : "406",
+        "count" : "219"
+      }, {
+        "item" : "310",
+        "count" : "177"
+      }, {
+        "item" : "411",
+        "count" : "167"
+      }, {
+        "item" : "101",
+        "count" : "145"
+      }, {
+        "item" : "401",
+        "count" : "144"
+      }, {
+        "item" : "312",
+        "count" : "144"
+      }, {
+        "item" : "107",
+        "count" : "138"
+      }, {
+        "item" : "502",
+        "count" : "134"
+      }, {
+        "item" : "302",
+        "count" : "132"
+      }, {
+        "item" : "408",
+        "count" : "127"
+      }, {
+        "item" : "503",
+        "count" : "125"
+      }, {
+        "item" : "404",
+        "count" : "124"
+      }, {
+        "item" : "318",
+        "count" : "120"
+      }, {
+        "item" : "311",
+        "count" : "120"
+      }, {
+        "item" : "501",
+        "count" : "117"
+      } ],
+      "smallest" : "101",
+      "count" : "6444",
+      "cardinality" : "63"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387436,
+    "name" : "Council District",
+    "dataTypeName" : "text",
+    "description" : "NYC Council District of the radiation producing equipment facility; An area represented by a NYC City Council member. ",
+    "fieldName" : "council_district",
+    "position" : 10,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553712,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "NULL",
+      "null" : "0",
+      "top" : [ {
+        "item" : "4",
+        "count" : "967"
+      }, {
+        "item" : "48",
+        "count" : "273"
+      }, {
+        "item" : "1",
+        "count" : "264"
+      }, {
+        "item" : "29",
+        "count" : "258"
+      }, {
+        "item" : "20",
+        "count" : "238"
+      }, {
+        "item" : "43",
+        "count" : "191"
+      }, {
+        "item" : "50",
+        "count" : "181"
+      }, {
+        "item" : "19",
+        "count" : "179"
+      }, {
+        "item" : "33",
+        "count" : "178"
+      }, {
+        "item" : "2",
+        "count" : "178"
+      }, {
+        "item" : "3",
+        "count" : "174"
+      }, {
+        "item" : "5",
+        "count" : "158"
+      }, {
+        "item" : "13",
+        "count" : "155"
+      }, {
+        "item" : "25",
+        "count" : "151"
+      }, {
+        "item" : "44",
+        "count" : "151"
+      }, {
+        "item" : "22",
+        "count" : "133"
+      }, {
+        "item" : "6",
+        "count" : "125"
+      }, {
+        "item" : "24",
+        "count" : "123"
+      }, {
+        "item" : "39",
+        "count" : "123"
+      }, {
+        "item" : "23",
+        "count" : "112"
+      } ],
+      "smallest" : "1",
+      "count" : "6444",
+      "cardinality" : "52"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387437,
+    "name" : "Census Tract",
+    "dataTypeName" : "text",
+    "description" : "Census Track of the radiation producing equipment facility; An small- area geographically encompassing population of 2,500 to 8,000 people.",
+    "fieldName" : "census_tract",
+    "position" : 11,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553711,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "NULL",
+      "null" : "0",
+      "top" : [ {
+        "item" : "36061008200",
+        "count" : "103"
+      }, {
+        "item" : "36061013700",
+        "count" : "80"
+      }, {
+        "item" : "36061011201",
+        "count" : "66"
+      }, {
+        "item" : "36061010200",
+        "count" : "63"
+      }, {
+        "item" : "36061011402",
+        "count" : "55"
+      }, {
+        "item" : "36081087100",
+        "count" : "55"
+      }, {
+        "item" : "36061008000",
+        "count" : "49"
+      }, {
+        "item" : "36061009400",
+        "count" : "48"
+      }, {
+        "item" : "36061011401",
+        "count" : "47"
+      }, {
+        "item" : "36061009600",
+        "count" : "45"
+      }, {
+        "item" : "36061011203",
+        "count" : "44"
+      }, {
+        "item" : "36061010400",
+        "count" : "37"
+      }, {
+        "item" : "36061002900",
+        "count" : "36"
+      }, {
+        "item" : "36047013400",
+        "count" : "32"
+      }, {
+        "item" : "36047000900",
+        "count" : "31"
+      }, {
+        "item" : "36061007400",
+        "count" : "29"
+      }, {
+        "item" : "36047055400",
+        "count" : "27"
+      }, {
+        "item" : "36061003100",
+        "count" : "27"
+      }, {
+        "item" : "36061002100",
+        "count" : "26"
+      }, {
+        "item" : "36061004100",
+        "count" : "26"
+      } ],
+      "smallest" : "36005000100",
+      "count" : "6444",
+      "cardinality" : "1435"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387438,
+    "name" : "BIN",
+    "dataTypeName" : "text",
+    "description" : "Building Identification Number of the radiation producing equipment facility; Seven digit numerical identifier unique to each building in NYC. The first digit is the brough code. ",
+    "fieldName" : "bin",
+    "position" : 12,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553710,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "NULL",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NULL",
+        "count" : "35"
+      }, {
+        "item" : "1017596",
+        "count" : "32"
+      }, {
+        "item" : "1035257",
+        "count" : "32"
+      }, {
+        "item" : "1035062",
+        "count" : "28"
+      }, {
+        "item" : "1041917",
+        "count" : "28"
+      }, {
+        "item" : "1037166",
+        "count" : "25"
+      }, {
+        "item" : "1023725",
+        "count" : "25"
+      }, {
+        "item" : "1083860",
+        "count" : "18"
+      }, {
+        "item" : "1041965",
+        "count" : "17"
+      }, {
+        "item" : "1040759",
+        "count" : "17"
+      }, {
+        "item" : "1024896",
+        "count" : "17"
+      }, {
+        "item" : "1019495",
+        "count" : "14"
+      }, {
+        "item" : "1002357",
+        "count" : "14"
+      }, {
+        "item" : "1035728",
+        "count" : "14"
+      }, {
+        "item" : "4534816",
+        "count" : "12"
+      }, {
+        "item" : "1035395",
+        "count" : "12"
+      }, {
+        "item" : "1035475",
+        "count" : "12"
+      }, {
+        "item" : "4045404",
+        "count" : "11"
+      }, {
+        "item" : "1077286",
+        "count" : "11"
+      }, {
+        "item" : "1078315",
+        "count" : "10"
+      } ],
+      "smallest" : "1000000",
+      "count" : "6444",
+      "cardinality" : "4651"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387439,
+    "name" : "BBL",
+    "dataTypeName" : "text",
+    "description" : "Borough-Block-Lot of the radiation producing equipment facility; Parcel number system used to identify the location of building or property",
+    "fieldName" : "bbl",
+    "position" : 13,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553709,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "NULL",
+      "null" : "0",
+      "top" : [ {
+        "item" : "NULL",
+        "count" : "35"
+      }, {
+        "item" : "1008690049",
+        "count" : "32"
+      }, {
+        "item" : "1012747501",
+        "count" : "32"
+      }, {
+        "item" : "1012730001",
+        "count" : "28"
+      }, {
+        "item" : "1013950010",
+        "count" : "28"
+      }, {
+        "item" : "1010100021",
+        "count" : "25"
+      }, {
+        "item" : "1013130014",
+        "count" : "25"
+      }, {
+        "item" : "1012660001",
+        "count" : "18"
+      }, {
+        "item" : "1013960007",
+        "count" : "17"
+      }, {
+        "item" : "1013740045",
+        "count" : "17"
+      }, {
+        "item" : "1010280033",
+        "count" : "17"
+      }, {
+        "item" : "1001977502",
+        "count" : "14"
+      }, {
+        "item" : "1008957501",
+        "count" : "14"
+      }, {
+        "item" : "1012890021",
+        "count" : "14"
+      }, {
+        "item" : "1012810059",
+        "count" : "12"
+      }, {
+        "item" : "4049787501",
+        "count" : "12"
+      }, {
+        "item" : "1012870058",
+        "count" : "12"
+      }, {
+        "item" : "1012640005",
+        "count" : "12"
+      }, {
+        "item" : "4018427501",
+        "count" : "11"
+      }, {
+        "item" : "1012930026",
+        "count" : "10"
+      } ],
+      "smallest" : "1000100015",
+      "count" : "6444",
+      "cardinality" : "4612"
+    },
+    "format" : { }
+  }, {
+    "id" : 449387440,
+    "name" : "NTA",
+    "dataTypeName" : "text",
+    "description" : "Neighborhood Tabulation Area of the radiation producing equipment facility; Geographical areas representing aggregation of census tracks that are a subset of NYC's 55 Public USE Microdata Areas (PUMAs)",
+    "fieldName" : "nta",
+    "position" : 14,
+    "renderTypeName" : "text",
+    "tableColumnId" : 93553717,
+    "cachedContents" : {
+      "non_null" : "6444",
+      "largest" : "SI54",
+      "null" : "0",
+      "top" : [ {
+        "item" : "MN17",
+        "count" : "439"
+      }, {
+        "item" : "MN40",
+        "count" : "257"
+      }, {
+        "item" : "MN20",
+        "count" : "212"
+      }, {
+        "item" : "QN22",
+        "count" : "167"
+      }, {
+        "item" : "QN17",
+        "count" : "167"
+      }, {
+        "item" : "MN19",
+        "count" : "142"
+      }, {
+        "item" : "BK31",
+        "count" : "138"
+      }, {
+        "item" : "MN31",
+        "count" : "119"
+      }, {
+        "item" : "MN24",
+        "count" : "106"
+      }, {
+        "item" : "QN28",
+        "count" : "100"
+      }, {
+        "item" : "QN29",
+        "count" : "99"
+      }, {
+        "item" : "QN46",
+        "count" : "91"
+      }, {
+        "item" : "BK88",
+        "count" : "85"
+      }, {
+        "item" : "BK17",
+        "count" : "82"
+      }, {
+        "item" : "QN70",
+        "count" : "77"
+      }, {
+        "item" : "MN23",
+        "count" : "77"
+      }, {
+        "item" : "MN14",
+        "count" : "77"
+      }, {
+        "item" : "BK44",
+        "count" : "73"
+      }, {
+        "item" : "MN25",
+        "count" : "73"
+      }, {
+        "item" : "BK25",
+        "count" : "70"
+      } ],
+      "smallest" : "BK09",
+      "count" : "6444",
+      "cardinality" : "194"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "attachments" : [ {
+      "filename" : "Radiation_Producing _Equipment_data_dictionary 12.31.19.xlsx",
+      "assetId" : "99557a30-b2c9-439c-9f36-919c336af6c7",
+      "blobId" : "",
+      "name" : "Radiation_Producing _Equipment_data_dictionary 12.31.19.xlsx"
+    }, {
+      "filename" : "User Guide _ Radiation Producing Equipment 1.15.2020.docx",
+      "assetId" : "2726cda6-997a-4216-ae11-e6aa686df015",
+      "blobId" : "",
+      "name" : "User Guide _ Radiation Producing Equipment 1.15.2020.docx"
+    } ],
+    "custom_fields" : {
+      "Update" : {
+        "Automation" : "No",
+        "Date Made Public" : "1/30/2020",
+        "Update Frequency" : "Annually"
+      },
+      "Dataset Information" : {
+        "Agency" : "Department of Health and Mental Hygiene (DOHMH)"
+      }
+    },
+    "rowLabel" : "registration for radiation producing equipment.",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "radiation", "x-ray", "xray", "dental", "veterinary", "radioactive", "linear", "accelerator" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

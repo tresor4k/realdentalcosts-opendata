@@ -1,0 +1,805 @@
+{
+  "id" : "5awp-wfkt",
+  "name" : "Cash Assistance, Medicaid, and SNAP - Borough/Community District Report",
+  "assetType" : "dataset",
+  "attribution" : "Human Resources Administration (HRA)",
+  "averageRating" : 0,
+  "category" : "Social Services",
+  "createdAt" : 1692116420,
+  "description" : "Population of individuals and households receiving Supplemental Nutrition Assistance Program (SNAP), Cash Assistance (CA), or Medicaid Benefits (MA) as shown on the Borough Consultation Report.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 3012,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 39875732,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1692116621,
+  "publicationGroup" : 19255937,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1792160843,
+  "rowsUpdatedBy" : "d5dp-fses",
+  "tableId" : 19255937,
+  "totalTimesRated" : 0,
+  "viewCount" : 7620,
+  "viewLastModified" : 1792160842,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1702414590,
+    "reviewedAutomatically" : false,
+    "state" : "approved",
+    "submissionId" : 5991363,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1702414572,
+    "targetAudience" : "public",
+    "workflowId" : 2285,
+    "reviewer" : {
+      "id" : "d5dp-fses",
+      "displayName" : "afinkel"
+    },
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1702414590,
+      "failureCount" : 0,
+      "startedAt" : 1702414590,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "d5dp-fses",
+      "displayName" : "afinkel"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 579674413,
+    "name" : "Month",
+    "dataTypeName" : "calendar_date",
+    "description" : "First Day of the Report Month",
+    "fieldName" : "month",
+    "position" : 1,
+    "renderTypeName" : "calendar_date",
+    "tableColumnId" : 147967974,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "2026-09-01T00:00:00.000",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2025-06-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2024-06-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2024-12-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2022-03-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2019-03-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2022-06-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2019-06-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2023-09-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2026-06-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2023-03-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2021-12-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2018-12-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2020-09-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2026-03-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2021-09-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2018-09-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2025-03-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2022-12-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2023-12-01T00:00:00.000",
+        "count" : "59"
+      }, {
+        "item" : "2023-06-01T00:00:00.000",
+        "count" : "59"
+      } ],
+      "smallest" : "2018-09-01T00:00:00.000",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "view" : "date"
+    }
+  }, {
+    "id" : 579674414,
+    "name" : "Borough",
+    "dataTypeName" : "text",
+    "description" : "Borough Name",
+    "fieldName" : "borough",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 147967975,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "Staten_Island",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Brooklyn",
+        "count" : "594"
+      }, {
+        "item" : "Queens",
+        "count" : "462"
+      }, {
+        "item" : "Manhattan",
+        "count" : "396"
+      }, {
+        "item" : "Bronx",
+        "count" : "396"
+      }, {
+        "item" : "Staten_Island",
+        "count" : "90"
+      }, {
+        "item" : "Staten Island",
+        "count" : "9"
+      } ],
+      "smallest" : "Bronx",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : { }
+  }, {
+    "id" : 579674412,
+    "name" : "Community District (CD)",
+    "dataTypeName" : "text",
+    "description" : "Community District Number",
+    "fieldName" : "community_district",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 147967973,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "S03",
+      "null" : "0",
+      "top" : [ {
+        "item" : "Q04",
+        "count" : "33"
+      }, {
+        "item" : "Q03",
+        "count" : "33"
+      }, {
+        "item" : "Q09",
+        "count" : "33"
+      }, {
+        "item" : "K18",
+        "count" : "33"
+      }, {
+        "item" : "K06",
+        "count" : "33"
+      }, {
+        "item" : "M04",
+        "count" : "33"
+      }, {
+        "item" : "B01",
+        "count" : "33"
+      }, {
+        "item" : "K09",
+        "count" : "33"
+      }, {
+        "item" : "M06",
+        "count" : "33"
+      }, {
+        "item" : "Q10",
+        "count" : "33"
+      }, {
+        "item" : "Q01",
+        "count" : "33"
+      }, {
+        "item" : "S03",
+        "count" : "33"
+      }, {
+        "item" : "K01",
+        "count" : "33"
+      }, {
+        "item" : "B08",
+        "count" : "33"
+      }, {
+        "item" : "K15",
+        "count" : "33"
+      }, {
+        "item" : "K05",
+        "count" : "33"
+      }, {
+        "item" : "M02",
+        "count" : "33"
+      }, {
+        "item" : "B04",
+        "count" : "33"
+      }, {
+        "item" : "Q13",
+        "count" : "33"
+      }, {
+        "item" : "M03",
+        "count" : "33"
+      } ],
+      "smallest" : "B01",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : { }
+  }, {
+    "id" : 579674407,
+    "name" : "Borough Consultation Total SNAP Recipients",
+    "dataTypeName" : "number",
+    "description" : "Individuals Receiving SNAP Benefits",
+    "fieldName" : "bc_snap_recipients",
+    "position" : 4,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967968,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "72954",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2163",
+        "count" : "3"
+      }, {
+        "item" : "20830",
+        "count" : "3"
+      }, {
+        "item" : "19012",
+        "count" : "2"
+      }, {
+        "item" : "22331",
+        "count" : "2"
+      }, {
+        "item" : "21624",
+        "count" : "2"
+      }, {
+        "item" : "39878",
+        "count" : "2"
+      }, {
+        "item" : "29212",
+        "count" : "2"
+      }, {
+        "item" : "22386",
+        "count" : "2"
+      }, {
+        "item" : "9883",
+        "count" : "2"
+      }, {
+        "item" : "6750",
+        "count" : "2"
+      }, {
+        "item" : "9651",
+        "count" : "2"
+      }, {
+        "item" : "40500",
+        "count" : "2"
+      }, {
+        "item" : "38889",
+        "count" : "2"
+      }, {
+        "item" : "22301",
+        "count" : "2"
+      }, {
+        "item" : "39946",
+        "count" : "2"
+      }, {
+        "item" : "2091",
+        "count" : "2"
+      }, {
+        "item" : "10875",
+        "count" : "2"
+      }, {
+        "item" : "23355",
+        "count" : "2"
+      }, {
+        "item" : "21667",
+        "count" : "2"
+      }, {
+        "item" : "40884",
+        "count" : "2"
+      } ],
+      "smallest" : "1920",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 579674406,
+    "name" : "Borough Consultation Total SNAP Households",
+    "dataTypeName" : "number",
+    "description" : "Households Receiving SNAP Benefits",
+    "fieldName" : "bc_snap_households",
+    "position" : 5,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967967,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "40766",
+      "null" : "0",
+      "top" : [ {
+        "item" : "24217",
+        "count" : "3"
+      }, {
+        "item" : "4317",
+        "count" : "2"
+      }, {
+        "item" : "22877",
+        "count" : "2"
+      }, {
+        "item" : "10816",
+        "count" : "2"
+      }, {
+        "item" : "18780",
+        "count" : "2"
+      }, {
+        "item" : "11920",
+        "count" : "2"
+      }, {
+        "item" : "8806",
+        "count" : "2"
+      }, {
+        "item" : "12354",
+        "count" : "2"
+      }, {
+        "item" : "12656",
+        "count" : "2"
+      }, {
+        "item" : "19796",
+        "count" : "2"
+      }, {
+        "item" : "13124",
+        "count" : "2"
+      }, {
+        "item" : "33577",
+        "count" : "2"
+      }, {
+        "item" : "3716",
+        "count" : "2"
+      }, {
+        "item" : "14135",
+        "count" : "2"
+      }, {
+        "item" : "32057",
+        "count" : "2"
+      }, {
+        "item" : "13722",
+        "count" : "2"
+      }, {
+        "item" : "10288",
+        "count" : "2"
+      }, {
+        "item" : "3681",
+        "count" : "2"
+      }, {
+        "item" : "12920",
+        "count" : "2"
+      }, {
+        "item" : "22838",
+        "count" : "2"
+      } ],
+      "smallest" : "1498",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 579674411,
+    "name" : "Borough Consultation Total Cash Assistance Recipients",
+    "dataTypeName" : "number",
+    "description" : "Active, Single Issue or Sanctioned Recipients",
+    "fieldName" : "bc_ca_recipients",
+    "position" : 6,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967972,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "26250",
+      "null" : "0",
+      "top" : [ {
+        "item" : "3569",
+        "count" : "4"
+      }, {
+        "item" : "12522",
+        "count" : "3"
+      }, {
+        "item" : "4792",
+        "count" : "3"
+      }, {
+        "item" : "3040",
+        "count" : "3"
+      }, {
+        "item" : "2585",
+        "count" : "3"
+      }, {
+        "item" : "694",
+        "count" : "3"
+      }, {
+        "item" : "5577",
+        "count" : "2"
+      }, {
+        "item" : "9623",
+        "count" : "2"
+      }, {
+        "item" : "7592",
+        "count" : "2"
+      }, {
+        "item" : "8168",
+        "count" : "2"
+      }, {
+        "item" : "4165",
+        "count" : "2"
+      }, {
+        "item" : "8931",
+        "count" : "2"
+      }, {
+        "item" : "3125",
+        "count" : "2"
+      }, {
+        "item" : "13153",
+        "count" : "2"
+      }, {
+        "item" : "9764",
+        "count" : "2"
+      }, {
+        "item" : "6781",
+        "count" : "2"
+      }, {
+        "item" : "4305",
+        "count" : "2"
+      }, {
+        "item" : "2379",
+        "count" : "2"
+      }, {
+        "item" : "3737",
+        "count" : "2"
+      }, {
+        "item" : "5359",
+        "count" : "2"
+      } ],
+      "smallest" : "274",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 579674410,
+    "name" : "Borough Consultation Total Cash Assistance Cases",
+    "dataTypeName" : "number",
+    "description" : "Cases with Active, Single Issue or Sanctioned members",
+    "fieldName" : "bc_ca_cases",
+    "position" : 7,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967971,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "14038",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2304",
+        "count" : "3"
+      }, {
+        "item" : "3601",
+        "count" : "3"
+      }, {
+        "item" : "3989",
+        "count" : "3"
+      }, {
+        "item" : "8184",
+        "count" : "3"
+      }, {
+        "item" : "2513",
+        "count" : "3"
+      }, {
+        "item" : "3732",
+        "count" : "3"
+      }, {
+        "item" : "1633",
+        "count" : "3"
+      }, {
+        "item" : "3332",
+        "count" : "3"
+      }, {
+        "item" : "1826",
+        "count" : "3"
+      }, {
+        "item" : "2229",
+        "count" : "3"
+      }, {
+        "item" : "1630",
+        "count" : "3"
+      }, {
+        "item" : "1884",
+        "count" : "3"
+      }, {
+        "item" : "1840",
+        "count" : "3"
+      }, {
+        "item" : "3849",
+        "count" : "3"
+      }, {
+        "item" : "3029",
+        "count" : "3"
+      }, {
+        "item" : "2997",
+        "count" : "3"
+      }, {
+        "item" : "1902",
+        "count" : "3"
+      }, {
+        "item" : "2521",
+        "count" : "3"
+      }, {
+        "item" : "3267",
+        "count" : "3"
+      }, {
+        "item" : "1828",
+        "count" : "2"
+      } ],
+      "smallest" : "252",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 579674409,
+    "name" : "Borough Consultation Total Medicaid Only Enrollees",
+    "dataTypeName" : "number",
+    "description" : "Medicaid Enrollees who do not receive other benefits",
+    "fieldName" : "bc_ma_only_enrollees",
+    "position" : 8,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967970,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "47004",
+      "null" : "0",
+      "top" : [ {
+        "item" : "8324",
+        "count" : "4"
+      }, {
+        "item" : "9197",
+        "count" : "3"
+      }, {
+        "item" : "21162",
+        "count" : "2"
+      }, {
+        "item" : "14275",
+        "count" : "2"
+      }, {
+        "item" : "7402",
+        "count" : "2"
+      }, {
+        "item" : "9504",
+        "count" : "2"
+      }, {
+        "item" : "10074",
+        "count" : "2"
+      }, {
+        "item" : "10397",
+        "count" : "2"
+      }, {
+        "item" : "9813",
+        "count" : "2"
+      }, {
+        "item" : "24480",
+        "count" : "2"
+      }, {
+        "item" : "13334",
+        "count" : "2"
+      }, {
+        "item" : "7984",
+        "count" : "2"
+      }, {
+        "item" : "16137",
+        "count" : "2"
+      }, {
+        "item" : "14570",
+        "count" : "2"
+      }, {
+        "item" : "9854",
+        "count" : "2"
+      }, {
+        "item" : "15268",
+        "count" : "2"
+      }, {
+        "item" : "8118",
+        "count" : "2"
+      }, {
+        "item" : "10988",
+        "count" : "2"
+      }, {
+        "item" : "11831",
+        "count" : "2"
+      }, {
+        "item" : "8355",
+        "count" : "2"
+      } ],
+      "smallest" : "1265",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 579674408,
+    "name" : "Borough Consultation Total Medicaid Enrollees",
+    "dataTypeName" : "number",
+    "description" : "All Medicaid Enrollees",
+    "fieldName" : "bc_total_ma_enrollees",
+    "position" : 9,
+    "renderTypeName" : "number",
+    "tableColumnId" : 147967969,
+    "cachedContents" : {
+      "non_null" : "1947",
+      "largest" : "63686",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2807",
+        "count" : "3"
+      }, {
+        "item" : "12661",
+        "count" : "2"
+      }, {
+        "item" : "5857",
+        "count" : "2"
+      }, {
+        "item" : "28059",
+        "count" : "2"
+      }, {
+        "item" : "32311",
+        "count" : "2"
+      }, {
+        "item" : "17632",
+        "count" : "2"
+      }, {
+        "item" : "2719",
+        "count" : "2"
+      }, {
+        "item" : "18619",
+        "count" : "2"
+      }, {
+        "item" : "30111",
+        "count" : "2"
+      }, {
+        "item" : "12313",
+        "count" : "2"
+      }, {
+        "item" : "31629",
+        "count" : "2"
+      }, {
+        "item" : "27404",
+        "count" : "2"
+      }, {
+        "item" : "44174",
+        "count" : "2"
+      }, {
+        "item" : "37043",
+        "count" : "2"
+      }, {
+        "item" : "12400",
+        "count" : "2"
+      }, {
+        "item" : "22185",
+        "count" : "2"
+      }, {
+        "item" : "19070",
+        "count" : "2"
+      }, {
+        "item" : "29758",
+        "count" : "2"
+      }, {
+        "item" : "26010",
+        "count" : "2"
+      }, {
+        "item" : "18780",
+        "count" : "2"
+      } ],
+      "smallest" : "2497",
+      "count" : "1947",
+      "cardinality" : "1947"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "attachments" : [ {
+      "filename" : "Data_Dictionary_Borough_Community_District_Report.xlsx",
+      "assetId" : "3f52aa81-7238-4a9c-a6a8-8735ff988e2e",
+      "name" : "Data_Dictionary_Borough_Community_District_Report.xlsx"
+    } ],
+    "custom_fields" : {
+      "Update" : {
+        "Automation" : "No",
+        "Date Made Public" : "12/12/2023",
+        "Update Frequency" : "Quarterly",
+        "Data Change Frequency" : "Quarterly"
+      },
+      "Dataset Information" : {
+        "Agency" : "Human Resources Administration (HRA)"
+      }
+    },
+    "rowLabel" : "distinct count of various metrics",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "borough consultation", "cash assistance", "ca", "public assistance", "cash assistance recipients", "cd", "community district", "snap", "snap benefits", "snap households", "snap recipients", "ma", "ma only", "medicaid", "food" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

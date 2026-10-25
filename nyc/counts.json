@@ -1,0 +1,3844 @@
+{
+  "download_date": "2026-10-24",
+  "generated_by": "build_counts.py",
+  "i595-2byq": {
+    "source_csv": "i595-2byq_2026-10-24.csv",
+    "sha256": "7cc1ad06fd7fee124ad05034287958cc7a5460bc9ddb2cf4b100b477e4f574af",
+    "meta": {
+      "file": "i595-2byq_metadata_2026-10-24.json",
+      "name": "Radiation Producing Equipment",
+      "attribution": "Department of Health and Mental Hygiene",
+      "agency": "Department of Health and Mental Hygiene (DOHMH)",
+      "update_frequency": "Annually",
+      "date_made_public": "1/30/2020",
+      "rowsUpdatedAt_epoch": 1580401995,
+      "rowsUpdatedAt_utc": "2020-01-30T16:33:15Z",
+      "viewLastModified_utc": "2020-01-30T16:39:25Z",
+      "createdAt_utc": "2020-01-17T16:36:13Z",
+      "license": null,
+      "licenseId": null,
+      "category": "Health",
+      "tags": [
+        "radiation",
+        "x-ray",
+        "xray",
+        "dental",
+        "veterinary",
+        "radioactive",
+        "linear",
+        "accelerator"
+      ],
+      "columns": [
+        [
+          "origid",
+          "ORIGID",
+          "text"
+        ],
+        [
+          "name",
+          "NAME",
+          "text"
+        ],
+        [
+          "address",
+          "ADDRESS",
+          "text"
+        ],
+        [
+          "borough",
+          "BOROUGH",
+          "text"
+        ],
+        [
+          "zipcode",
+          "ZIPCODE",
+          "text"
+        ],
+        [
+          "facility_type",
+          "Facility Type",
+          "text"
+        ],
+        [
+          "latitude",
+          "Latitude",
+          "number"
+        ],
+        [
+          "longitude",
+          "Longitude",
+          "number"
+        ],
+        [
+          "community_board",
+          "Community Board",
+          "text"
+        ],
+        [
+          "council_district",
+          "Council District",
+          "text"
+        ],
+        [
+          "census_tract",
+          "Census Tract",
+          "text"
+        ],
+        [
+          "bin",
+          "BIN",
+          "text"
+        ],
+        [
+          "bbl",
+          "BBL",
+          "text"
+        ],
+        [
+          "nta",
+          "NTA",
+          "text"
+        ]
+      ],
+      "description": "This dataset consists of registrations for radiation producing equipment. The owner or operator of any radiation installation or of any radiation equipment in operable condition intended to be used for patient clinical diagnosis and/or treatment must obtain a current Radiation Producing Equipment - Certificate of Registration from the NYC Department of Health and Mental Hygiene (DOHMH) in order to establish (set up), maintain or operate such equipment. Registrations are categorized by facility and must be renewed every two years."
+    },
+    "rows_total": 6444,
+    "csv_columns": [
+      "ORIGID",
+      "NAME",
+      "ADDRESS",
+      "BOROUGH",
+      "ZIPCODE",
+      "Facility Type",
+      "Latitude",
+      "Longitude",
+      "Community Board",
+      "Council District",
+      "Census Tract",
+      "BIN",
+      "BBL",
+      "NTA"
+    ],
+    "facility_type_counts": {
+      "Dental X-Ray": 3871,
+      "Non-Hospital X-Ray": 1294,
+      "Podiatric X-Ray": 355,
+      "Dental CBCT X-Ray": 288,
+      "Radioactive Materials": 284,
+      "Veterinary X-Ray": 212,
+      "Hospital X-Ray": 90,
+      "Linear Accelerator": 50
+    },
+    "dental_filter": {
+      "field": "Facility Type (CSV) / facility_type (API)",
+      "values_kept": [
+        "Dental X-Ray",
+        "Dental CBCT X-Ray"
+      ],
+      "values_excluded": {
+        "Radioactive Materials": 284,
+        "Hospital X-Ray": 90,
+        "Non-Hospital X-Ray": 1294,
+        "Veterinary X-Ray": 212,
+        "Podiatric X-Ray": 355,
+        "Linear Accelerator": 50
+      },
+      "n_dental_records": 4159,
+      "n_by_value": {
+        "Dental X-Ray": 3871,
+        "Dental CBCT X-Ray": 288
+      },
+      "n_excluded_records": 2285,
+      "excluded_but_name_looks_dental_not_counted": {
+        "n": 21,
+        "by_facility_type": {
+          "Non-Hospital X-Ray": 19,
+          "Podiatric X-Ray": 2
+        },
+        "examples_first5": [
+          "NORTH BROOKLYN DENTAL CARE",
+          "GREENPOINT DENTAL P.C.",
+          "MONICA MEHRA DDS",
+          "SIROIS DAVIS - DMD",
+          "DR K DENTAL P.C."
+        ]
+      }
+    },
+    "dental": {
+      "n_records": 4159,
+      "distinct_ORIGID": 4159,
+      "distinct_address_zip": 3944,
+      "distinct_name_address_zip": 4112,
+      "addresses_with_both_dental_xray_and_cbct": 86,
+      "origid_duplicated_n": 0,
+      "missing_by_field": {
+        "NAME": 0,
+        "ADDRESS": 0,
+        "BOROUGH": 0,
+        "ZIPCODE": 0,
+        "Latitude": 5,
+        "Longitude": 5,
+        "Community Board": 5,
+        "Council District": 19,
+        "Census Tract": 5,
+        "BIN": 11,
+        "BBL": 11,
+        "NTA": 5
+      },
+      "missing_literal_NULL_by_field": {
+        "Community Board": 5,
+        "Council District": 19,
+        "Census Tract": 5,
+        "BIN": 11,
+        "BBL": 11,
+        "NTA": 5
+      },
+      "missing_empty_string_by_field": {
+        "Latitude": 5,
+        "Longitude": 5
+      },
+      "borough_raw_value_counts": {
+        "NEW YORK": 1340,
+        "BROOKLYN": 1035,
+        "BRONX": 365,
+        "STATEN ISLAND": 239,
+        "FLUSHING": 214,
+        "FOREST HILLS": 99,
+        "ASTORIA": 86,
+        "JACKSON HEIGHTS": 74,
+        "BAYSIDE": 73,
+        "ELMHURST": 69,
+        "JAMAICA": 60,
+        "REGO PARK": 46,
+        "WOODSIDE": 31,
+        "RIDGEWOOD": 27,
+        "CORONA": 23,
+        "LITTLE NECK": 21,
+        "HOWARD BEACH": 20,
+        "MASPETH": 19,
+        "WHITESTONE": 19,
+        "FRESH MEADOWS": 19,
+        "QUEENS": 18,
+        "LONG ISLAND CITY": 18,
+        "QUEENS VILLAGE": 18,
+        "KEW GARDENS": 17,
+        "GLENDALE": 15,
+        "OAKLAND GARDENS": 15,
+        "SOUTH RICHMOND HILL": 15,
+        "WOODHAVEN": 13,
+        "GLEN OAKS": 13,
+        "SUNNYSIDE": 12,
+        "MIDDLE VILLAGE": 12,
+        "FAR ROCKAWAY": 12,
+        "RICHMOND HILL": 11,
+        "HOLLIS": 11,
+        "SOUTH OZONE PARK": 9,
+        "EAST ELMHURST": 9,
+        "BELLEROSE": 9,
+        "OZONE PARK": 9,
+        "ROSEDALE": 4,
+        "BRIARWOOD": 4,
+        "ROCKAWAY PARK": 4,
+        "BAYSIDE HILLS": 4,
+        "FLORAL PARK": 4,
+        "CAMBRIA HEIGHTS": 3,
+        "New York": 2,
+        "COLLEGE POINT": 2,
+        "ARVERNE": 2,
+        "PELHAM": 2,
+        "BRROKLYN": 1,
+        "ROCKAWAY": 1,
+        "DOUGLASTON": 1,
+        "SPRINGFIELD GARDENS": 1,
+        "SAINT ALBANS": 1,
+        "ROCKAWAY BEACH": 1,
+        "BELLE HARBOR": 1,
+        "BREEZY POINT": 1,
+        "JACKSON HTS": 1,
+        "LAURELTON": 1,
+        "PIPERSVILLE": 1,
+        "GREAT NECK": 1,
+        "NEW HYDE PARK": 1
+      },
+      "borough_raw_distinct_values": 61,
+      "borough_raw_canonical_5_values_n_records": 2997,
+      "borough_raw_case_variant_of_canonical": {
+        "New York": 2
+      },
+      "borough_raw_noncanonical_n_records": 1162,
+      "borough_raw_noncanonical_values_n": 56,
+      "borough_raw_label_for_manhattan": "NEW YORK",
+      "borough_derived_from_community_board": {
+        "Manhattan": 1341,
+        "Queens": 1172,
+        "Brooklyn": 1036,
+        "Bronx": 366,
+        "Staten Island": 239,
+        "(no community board)": 5
+      },
+      "borough_derivation_disagreements": [
+        {
+          "origid": "50005267",
+          "name": "MY DENTIST PC",
+          "address": "5227 BROADWAY",
+          "borough_raw": "BRONX",
+          "zip": "10463",
+          "cb": "208",
+          "nta": "MN01",
+          "tract_county": "36061",
+          "derived_cb_nta_tract": [
+            "Bronx",
+            "Manhattan",
+            "Manhattan"
+          ]
+        },
+        {
+          "origid": "50007756",
+          "name": "THE NEW YORK AND PRESBYTERIAN HOSPITAL INC",
+          "address": "99 TERRACE VIEW AVE",
+          "borough_raw": "BRONX",
+          "zip": "10463",
+          "cb": "208",
+          "nta": "MN01",
+          "tract_county": "36061",
+          "derived_cb_nta_tract": [
+            "Bronx",
+            "Manhattan",
+            "Manhattan"
+          ]
+        },
+        {
+          "origid": "40634334",
+          "name": "LAM PETER K. - DDS",
+          "address": "150 WEST 228 STREET",
+          "borough_raw": "BRONX",
+          "zip": "10463",
+          "cb": "208",
+          "nta": "MN01",
+          "tract_county": "36061",
+          "derived_cb_nta_tract": [
+            "Bronx",
+            "Manhattan",
+            "Manhattan"
+          ]
+        },
+        {
+          "origid": "50038634",
+          "name": "MANHATTAN ORAL FACIAL SURGERY LLC",
+          "address": "5209 BROADWAY",
+          "borough_raw": "BRONX",
+          "zip": "10463",
+          "cb": "208",
+          "nta": "MN01",
+          "tract_county": "36061",
+          "derived_cb_nta_tract": [
+            "Bronx",
+            "Manhattan",
+            "Manhattan"
+          ]
+        }
+      ],
+      "borough_derivation_cross_check": {
+        "records_with_all_three_codes_equal": 4150,
+        "records_with_cb_but_nta_or_tract_disagree": 4,
+        "records_without_community_board": 5
+      },
+      "borough_raw_canonical_but_differs_from_derived": 1,
+      "zip_distinct": 200,
+      "zip_non_5_digit_records": 0,
+      "zip_non_5_digit_values": {},
+      "zip_counts_top25": {
+        "10022": 168,
+        "10019": 158,
+        "10016": 137,
+        "11375": 101,
+        "11229": 98,
+        "11209": 91,
+        "11354": 88,
+        "11235": 83,
+        "10065": 83,
+        "11372": 76,
+        "10017": 71,
+        "11373": 69,
+        "11355": 63,
+        "10314": 61,
+        "10013": 60,
+        "11361": 57,
+        "11201": 56,
+        "11230": 52,
+        "11220": 47,
+        "10023": 47,
+        "10003": 46,
+        "10011": 46,
+        "11374": 46,
+        "11223": 43,
+        "11204": 42
+      },
+      "zip_counts_all": {
+        "10001": 25,
+        "10002": 20,
+        "10003": 46,
+        "10004": 9,
+        "10005": 4,
+        "10006": 4,
+        "10007": 17,
+        "10009": 7,
+        "10010": 17,
+        "10011": 46,
+        "10012": 10,
+        "10013": 60,
+        "10014": 2,
+        "10016": 137,
+        "10017": 71,
+        "10018": 6,
+        "10019": 158,
+        "10020": 12,
+        "10021": 31,
+        "10022": 168,
+        "10023": 47,
+        "10024": 24,
+        "10025": 19,
+        "10026": 9,
+        "10027": 17,
+        "10028": 24,
+        "10029": 16,
+        "10030": 2,
+        "10031": 10,
+        "10032": 25,
+        "10033": 33,
+        "10034": 17,
+        "10035": 10,
+        "10036": 25,
+        "10037": 6,
+        "10038": 24,
+        "10039": 2,
+        "10040": 17,
+        "10044": 1,
+        "10065": 83,
+        "10069": 2,
+        "10075": 19,
+        "10107": 1,
+        "10111": 18,
+        "10121": 1,
+        "10122": 1,
+        "10123": 2,
+        "10128": 17,
+        "10155": 5,
+        "10162": 1,
+        "10165": 1,
+        "10167": 1,
+        "10168": 1,
+        "10170": 1,
+        "10173": 2,
+        "10174": 1,
+        "10175": 1,
+        "10176": 2,
+        "10280": 3,
+        "10301": 17,
+        "10302": 8,
+        "10303": 6,
+        "10304": 16,
+        "10305": 14,
+        "10306": 36,
+        "10307": 3,
+        "10308": 15,
+        "10309": 11,
+        "10310": 10,
+        "10312": 42,
+        "10314": 61,
+        "10451": 18,
+        "10452": 12,
+        "10453": 17,
+        "10454": 7,
+        "10455": 13,
+        "10456": 11,
+        "10457": 12,
+        "10458": 15,
+        "10459": 11,
+        "10460": 11,
+        "10461": 42,
+        "10462": 32,
+        "10463": 37,
+        "10464": 1,
+        "10465": 8,
+        "10466": 9,
+        "10467": 23,
+        "10468": 20,
+        "10469": 17,
+        "10470": 2,
+        "10471": 11,
+        "10472": 11,
+        "10473": 7,
+        "10474": 5,
+        "10475": 14,
+        "10803": 2,
+        "11004": 16,
+        "11005": 1,
+        "11021": 1,
+        "11040": 1,
+        "11101": 18,
+        "11102": 14,
+        "11103": 38,
+        "11104": 13,
+        "11105": 18,
+        "11106": 16,
+        "11201": 56,
+        "11203": 17,
+        "11204": 42,
+        "11205": 7,
+        "11206": 22,
+        "11207": 12,
+        "11208": 11,
+        "11209": 91,
+        "11210": 25,
+        "11211": 22,
+        "11212": 4,
+        "11213": 16,
+        "11214": 33,
+        "11215": 40,
+        "11216": 11,
+        "11217": 16,
+        "11218": 22,
+        "11219": 41,
+        "11220": 47,
+        "11221": 6,
+        "11222": 22,
+        "11223": 43,
+        "11224": 20,
+        "11225": 13,
+        "11226": 29,
+        "11228": 21,
+        "11229": 98,
+        "11230": 52,
+        "11231": 10,
+        "11232": 7,
+        "11233": 4,
+        "11234": 35,
+        "11235": 83,
+        "11236": 21,
+        "11237": 9,
+        "11238": 14,
+        "11239": 2,
+        "11241": 1,
+        "11243": 5,
+        "11249": 6,
+        "11354": 88,
+        "11355": 63,
+        "11356": 2,
+        "11357": 19,
+        "11358": 31,
+        "11360": 12,
+        "11361": 57,
+        "11362": 18,
+        "11363": 4,
+        "11364": 26,
+        "11365": 14,
+        "11366": 10,
+        "11367": 26,
+        "11368": 23,
+        "11369": 1,
+        "11370": 8,
+        "11372": 76,
+        "11373": 69,
+        "11374": 46,
+        "11375": 101,
+        "11377": 31,
+        "11378": 19,
+        "11379": 12,
+        "11385": 42,
+        "11411": 3,
+        "11412": 1,
+        "11413": 1,
+        "11414": 20,
+        "11415": 18,
+        "11416": 5,
+        "11417": 4,
+        "11418": 11,
+        "11419": 16,
+        "11420": 9,
+        "11421": 13,
+        "11422": 5,
+        "11423": 12,
+        "11426": 9,
+        "11427": 7,
+        "11428": 8,
+        "11429": 3,
+        "11430": 1,
+        "11432": 40,
+        "11433": 1,
+        "11434": 9,
+        "11435": 14,
+        "11436": 1,
+        "11691": 14,
+        "11692": 6,
+        "11693": 1,
+        "11694": 7,
+        "11697": 1,
+        "18947": 1
+      },
+      "no_city_geocode_records_CB_NULL": [
+        {
+          "origid": "50083957",
+          "name": "ORAL HEALTH IMPACT PROJECT NEW YORK PC",
+          "address": "6097 EASTON RD OFC",
+          "borough_raw": "PIPERSVILLE",
+          "zip": "18947"
+        },
+        {
+          "origid": "50060767",
+          "name": "DENTSERV DENTAL SERVICES PC",
+          "address": "15 CANAL RD",
+          "borough_raw": "PELHAM",
+          "zip": "10803"
+        },
+        {
+          "origid": "50066054",
+          "name": "CONESCAN MOBILE LLC",
+          "address": "8 BOND ST STE 203",
+          "borough_raw": "GREAT NECK",
+          "zip": "11021"
+        },
+        {
+          "origid": "41709589",
+          "name": "DENTSERV",
+          "address": "15 CANAL ROAD",
+          "borough_raw": "PELHAM",
+          "zip": "10803"
+        },
+        {
+          "origid": "41448433",
+          "name": "PATERNINA MARC - DDS",
+          "address": "270-20 UNION TURNPIKE",
+          "borough_raw": "NEW HYDE PARK",
+          "zip": "11040"
+        }
+      ],
+      "zip_outside_nyc_prefix_records": [
+        {
+          "origid": "50083957",
+          "name": "ORAL HEALTH IMPACT PROJECT NEW YORK PC",
+          "address": "6097 EASTON RD OFC",
+          "borough_raw": "PIPERSVILLE",
+          "zip": "18947",
+          "cb": "NULL",
+          "cd": "NULL"
+        },
+        {
+          "origid": "50060767",
+          "name": "DENTSERV DENTAL SERVICES PC",
+          "address": "15 CANAL RD",
+          "borough_raw": "PELHAM",
+          "zip": "10803",
+          "cb": "NULL",
+          "cd": "NULL"
+        },
+        {
+          "origid": "41709589",
+          "name": "DENTSERV",
+          "address": "15 CANAL ROAD",
+          "borough_raw": "PELHAM",
+          "zip": "10803",
+          "cb": "NULL",
+          "cd": "NULL"
+        }
+      ],
+      "coords": {
+        "blank_lat_lon_are_the_5_no_geocode_rows": true,
+        "missing_or_non_numeric": 5,
+        "outside_nyc_bbox": 0,
+        "inside_nyc_bbox": 4154,
+        "bbox": {
+          "lat": [
+            40.49,
+            40.92
+          ],
+          "lon": [
+            -74.27,
+            -73.68
+          ]
+        }
+      },
+      "council_district_distinct_values_incl_NULL": 52,
+      "council_district_distinct_numeric": 51,
+      "council_district_missing_literal_NULL": 19,
+      "council_district_NULL_but_has_community_board": 14,
+      "council_district_non_numeric_values": {
+        "NULL": 19
+      },
+      "council_district_out_of_1_51": {},
+      "council_district_counts": {
+        "1": 153,
+        "2": 96,
+        "3": 96,
+        "4": 695,
+        "5": 47,
+        "6": 81,
+        "7": 33,
+        "8": 41,
+        "9": 36,
+        "10": 86,
+        "11": 71,
+        "12": 32,
+        "13": 76,
+        "14": 38,
+        "15": 29,
+        "16": 20,
+        "17": 41,
+        "18": 33,
+        "19": 127,
+        "20": 169,
+        "21": 56,
+        "22": 85,
+        "23": 82,
+        "24": 80,
+        "25": 116,
+        "26": 65,
+        "27": 28,
+        "28": 31,
+        "29": 170,
+        "30": 67,
+        "31": 26,
+        "32": 54,
+        "33": 103,
+        "34": 38,
+        "35": 40,
+        "36": 20,
+        "37": 20,
+        "38": 60,
+        "39": 83,
+        "40": 43,
+        "41": 19,
+        "42": 18,
+        "43": 124,
+        "44": 107,
+        "45": 40,
+        "46": 62,
+        "47": 78,
+        "48": 188,
+        "49": 47,
+        "50": 114,
+        "51": 76,
+        "NULL": 19
+      },
+      "council_district_top10": {
+        "4": 695,
+        "48": 188,
+        "29": 170,
+        "20": 169,
+        "1": 153,
+        "19": 127,
+        "43": 124,
+        "25": 116,
+        "50": 114,
+        "44": 107
+      },
+      "council_district_bottom5_nonempty": {
+        "42": 18,
+        "41": 19,
+        "16": 20,
+        "36": 20,
+        "37": 20
+      },
+      "council_district_stats": {
+        "districts_with_records": 51,
+        "min": 18,
+        "max": 695,
+        "median": 62
+      },
+      "community_board_distinct_incl_NULL": 62,
+      "community_board_distinct_numeric": 61,
+      "community_board_missing": 5,
+      "community_board_counts": {
+        "101": 73,
+        "102": 75,
+        "103": 60,
+        "104": 40,
+        "105": 427,
+        "106": 193,
+        "107": 88,
+        "108": 219,
+        "109": 21,
+        "110": 25,
+        "111": 27,
+        "112": 92,
+        "164": 1,
+        "201": 31,
+        "202": 15,
+        "203": 13,
+        "204": 22,
+        "205": 30,
+        "206": 19,
+        "207": 37,
+        "208": 48,
+        "209": 32,
+        "210": 40,
+        "211": 57,
+        "212": 22,
+        "301": 68,
+        "302": 70,
+        "303": 19,
+        "304": 16,
+        "305": 25,
+        "306": 60,
+        "307": 47,
+        "308": 18,
+        "309": 30,
+        "310": 115,
+        "311": 80,
+        "312": 89,
+        "313": 50,
+        "314": 84,
+        "315": 172,
+        "316": 6,
+        "317": 21,
+        "318": 66,
+        "401": 93,
+        "402": 55,
+        "403": 87,
+        "404": 89,
+        "405": 75,
+        "406": 146,
+        "407": 198,
+        "408": 83,
+        "409": 50,
+        "410": 46,
+        "411": 125,
+        "412": 45,
+        "413": 50,
+        "414": 29,
+        "483": 1,
+        "501": 80,
+        "502": 69,
+        "503": 90,
+        "NULL": 5
+      },
+      "community_board_top10": {
+        "105": 427,
+        "108": 219,
+        "407": 198,
+        "106": 193,
+        "315": 172,
+        "406": 146,
+        "411": 125,
+        "310": 115,
+        "401": 93,
+        "112": 92
+      },
+      "nta_distinct_incl_NULL": 191,
+      "nta_missing": 5,
+      "nta_top10": {
+        "MN17": 344,
+        "MN40": 162,
+        "MN20": 143,
+        "QN22": 125,
+        "QN17": 115,
+        "BK31": 93,
+        "MN19": 89,
+        "QN28": 77,
+        "QN29": 71,
+        "QN46": 69
+      },
+      "census_tract_distinct": 1230,
+      "council_districts_spanning_more_than_one_borough": {
+        "8": {
+          "Bronx": 20,
+          "Manhattan": 21
+        },
+        "10": {
+          "Bronx": 4,
+          "Manhattan": 82
+        },
+        "34": {
+          "Brooklyn": 27,
+          "Queens": 11
+        }
+      },
+      "names_with_more_than_5_records": {
+        "SUNSET PARK HEALTH COUNCIL INC": 34,
+        "MONTEFIORE MEDICAL CENTER": 12,
+        "NATIONAL DENTAL PLLC": 8,
+        "THE INSTITUTE FOR FAMILY HEALTH": 7,
+        "ASNIS DENTAL PLLC": 6
+      }
+    }
+  },
+  "33db-aeds": {
+    "source_csv": "33db-aeds_2026-10-24.csv",
+    "sha256": "9da0ffd82f3503821f920c9e1bc32f4213479b7ad774a17c600f15ac5ab7cf5b",
+    "meta": {
+      "file": "33db-aeds_metadata_2026-10-24.json",
+      "name": "Citywide HRA- Administered Medicaid Enrollees",
+      "attribution": "Human Resource Administration (HRA)",
+      "agency": "Human Resources Administration (HRA)",
+      "update_frequency": "Monthly",
+      "date_made_public": "1/14/2016",
+      "rowsUpdatedAt_epoch": 1788959589,
+      "rowsUpdatedAt_utc": "2026-09-09T13:13:09Z",
+      "viewLastModified_utc": "2026-09-09T13:13:09Z",
+      "createdAt_utc": "2016-01-14T17:37:54Z",
+      "license": null,
+      "licenseId": null,
+      "category": "Social Services",
+      "tags": [
+        "medicaid",
+        "ma",
+        "medical assistance",
+        "ssi",
+        "supplemental security income",
+        "nursing home",
+        "ma enrollees"
+      ],
+      "columns": [
+        [
+          "month",
+          "Month",
+          "calendar_date"
+        ],
+        [
+          "cash_assistance_medical_assistance",
+          "Cash Assistance - Medical Assistance",
+          "number"
+        ],
+        [
+          "supplemental_security_income_medical_assistance",
+          "Supplemental Security Income - Medical Assistance",
+          "number"
+        ],
+        [
+          "nursing_home_medical_assistance",
+          "Nursing Home - Medical Assistance",
+          "number"
+        ],
+        [
+          "medical_assistance_only",
+          "Medical Assistance Only",
+          "number"
+        ],
+        [
+          "total_hra_enrolled_medical_assistance_individuals",
+          "Total HRA-Enrolled Medical Assistance Individuals",
+          "number"
+        ]
+      ],
+      "description": "Total number of enrollees in Medicaid"
+    },
+    "rows_total": 236,
+    "csv_columns": [
+      "Month",
+      "Cash Assistance - Medical Assistance",
+      "Supplemental Security Income - Medical Assistance",
+      "Nursing Home - Medical Assistance",
+      "Medical Assistance Only",
+      "Total HRA-Enrolled Medical Assistance Individuals"
+    ],
+    "n_months": 236,
+    "first_month": "2007-01",
+    "last_month": "2026-08",
+    "series_is_contiguous_monthly": true,
+    "duplicate_months": 0,
+    "components_sum_vs_total": {
+      "months_with_mismatch": 236,
+      "months_exact": 0,
+      "first_mismatch_month": "2007-01",
+      "last_mismatch_month": "2026-08",
+      "first_exact_month_after_last_mismatch": null,
+      "min_diff_sum_minus_total": 24399,
+      "max_diff_sum_minus_total": 90768,
+      "diff_by_month_nonzero": {
+        "2007-01": 40943,
+        "2007-02": 40536,
+        "2007-03": 40276,
+        "2007-04": 40087,
+        "2007-05": 39707,
+        "2007-06": 39923,
+        "2007-07": 39954,
+        "2007-08": 40046,
+        "2007-09": 39998,
+        "2007-10": 39594,
+        "2007-11": 39536,
+        "2007-12": 39257,
+        "2008-01": 39403,
+        "2008-02": 39637,
+        "2008-03": 39227,
+        "2008-04": 39272,
+        "2008-05": 39310,
+        "2008-06": 39143,
+        "2008-07": 39822,
+        "2008-08": 40150,
+        "2008-09": 39860,
+        "2008-10": 40315,
+        "2008-11": 40487,
+        "2008-12": 40186,
+        "2009-01": 40091,
+        "2009-02": 39983,
+        "2009-03": 39909,
+        "2009-04": 39749,
+        "2009-05": 39412,
+        "2009-06": 39695,
+        "2009-07": 39490,
+        "2009-08": 39109,
+        "2009-09": 39241,
+        "2009-10": 39412,
+        "2009-11": 39462,
+        "2009-12": 38989,
+        "2010-01": 39005,
+        "2010-02": 39409,
+        "2010-03": 38830,
+        "2010-04": 38673,
+        "2010-05": 38719,
+        "2010-06": 38244,
+        "2010-07": 38113,
+        "2010-08": 38316,
+        "2010-09": 38149,
+        "2010-10": 38692,
+        "2010-11": 38410,
+        "2010-12": 38459,
+        "2011-01": 38232,
+        "2011-02": 37450,
+        "2011-03": 37297,
+        "2011-04": 37268,
+        "2011-05": 37078,
+        "2011-06": 36911,
+        "2011-07": 37037,
+        "2011-08": 37031,
+        "2011-09": 37666,
+        "2011-10": 37715,
+        "2011-11": 37597,
+        "2011-12": 37381,
+        "2012-01": 37161,
+        "2012-02": 37511,
+        "2012-03": 37883,
+        "2012-04": 37621,
+        "2012-05": 38077,
+        "2012-06": 38221,
+        "2012-07": 38347,
+        "2012-08": 38746,
+        "2012-09": 38723,
+        "2012-10": 38171,
+        "2012-11": 38237,
+        "2012-12": 38475,
+        "2013-01": 37784,
+        "2013-02": 37451,
+        "2013-03": 37578,
+        "2013-04": 36936,
+        "2013-05": 37073,
+        "2013-06": 37113,
+        "2013-07": 37005,
+        "2013-08": 37161,
+        "2013-09": 37126,
+        "2013-10": 37286,
+        "2013-11": 37280,
+        "2013-12": 37049,
+        "2014-01": 36883,
+        "2014-02": 36524,
+        "2014-03": 36454,
+        "2014-04": 36357,
+        "2014-05": 36052,
+        "2014-06": 36205,
+        "2014-07": 36291,
+        "2014-08": 36283,
+        "2014-09": 36126,
+        "2014-10": 36111,
+        "2014-11": 36236,
+        "2014-12": 35964,
+        "2015-01": 36045,
+        "2015-02": 35645,
+        "2015-03": 35593,
+        "2015-04": 35429,
+        "2015-05": 35392,
+        "2015-06": 35179,
+        "2015-07": 35210,
+        "2015-08": 35054,
+        "2015-09": 34833,
+        "2015-10": 35146,
+        "2015-11": 35165,
+        "2015-12": 34686,
+        "2016-01": 34438,
+        "2016-02": 34125,
+        "2016-03": 33732,
+        "2016-04": 33277,
+        "2016-05": 32765,
+        "2016-06": 32159,
+        "2016-07": 32016,
+        "2016-08": 31542,
+        "2016-09": 31340,
+        "2016-10": 31102,
+        "2016-11": 30844,
+        "2016-12": 30709,
+        "2017-01": 30323,
+        "2017-02": 29991,
+        "2017-03": 29637,
+        "2017-04": 29728,
+        "2017-05": 29702,
+        "2017-06": 30096,
+        "2017-07": 30036,
+        "2017-08": 30225,
+        "2017-09": 30096,
+        "2017-10": 29985,
+        "2017-11": 30068,
+        "2017-12": 30189,
+        "2018-01": 29896,
+        "2018-02": 29732,
+        "2018-03": 29171,
+        "2018-04": 29258,
+        "2018-05": 28985,
+        "2018-06": 29187,
+        "2018-07": 29090,
+        "2018-08": 29466,
+        "2018-09": 30099,
+        "2018-10": 30535,
+        "2018-11": 30898,
+        "2018-12": 31022,
+        "2019-01": 30963,
+        "2019-02": 90768,
+        "2019-03": 30524,
+        "2019-04": 30368,
+        "2019-05": 30259,
+        "2019-06": 30118,
+        "2019-07": 30038,
+        "2019-08": 24399,
+        "2019-09": 29557,
+        "2019-10": 29472,
+        "2019-11": 29272,
+        "2019-12": 29134,
+        "2020-01": 29063,
+        "2020-02": 29281,
+        "2020-03": 29043,
+        "2020-04": 29072,
+        "2020-05": 28378,
+        "2020-06": 26900,
+        "2020-07": 31530,
+        "2020-08": 31479,
+        "2020-09": 31500,
+        "2020-10": 31218,
+        "2020-11": 31243,
+        "2020-12": 31389,
+        "2021-01": 31444,
+        "2021-02": 31585,
+        "2021-03": 31289,
+        "2021-04": 31467,
+        "2021-05": 31937,
+        "2021-06": 31463,
+        "2021-07": 32101,
+        "2021-08": 32206,
+        "2021-09": 32167,
+        "2021-10": 32609,
+        "2021-11": 32641,
+        "2021-12": 32775,
+        "2022-01": 33098,
+        "2022-02": 33264,
+        "2022-03": 33134,
+        "2022-04": 33265,
+        "2022-05": 33320,
+        "2022-06": 33229,
+        "2022-07": 33527,
+        "2022-08": 33430,
+        "2022-09": 33472,
+        "2022-10": 33758,
+        "2022-11": 33338,
+        "2022-12": 33461,
+        "2023-01": 33364,
+        "2023-02": 33530,
+        "2023-03": 33412,
+        "2023-04": 33611,
+        "2023-05": 33402,
+        "2023-06": 33552,
+        "2023-07": 33669,
+        "2023-08": 33772,
+        "2023-09": 33782,
+        "2023-10": 33622,
+        "2023-11": 33727,
+        "2023-12": 33751,
+        "2024-01": 33910,
+        "2024-02": 34132,
+        "2024-03": 34596,
+        "2024-04": 34280,
+        "2024-05": 34494,
+        "2024-06": 34881,
+        "2024-07": 34745,
+        "2024-08": 34622,
+        "2024-09": 34594,
+        "2024-10": 34717,
+        "2024-11": 34717,
+        "2024-12": 34554,
+        "2025-01": 34525,
+        "2025-02": 34770,
+        "2025-03": 34878,
+        "2025-04": 34407,
+        "2025-05": 32744,
+        "2025-06": 32085,
+        "2025-07": 31807,
+        "2025-08": 31338,
+        "2025-09": 32018,
+        "2025-10": 32464,
+        "2025-11": 32924,
+        "2025-12": 32689,
+        "2026-01": 33126,
+        "2026-02": 33223,
+        "2026-03": 33201,
+        "2026-04": 33126,
+        "2026-05": 32741,
+        "2026-06": 32282,
+        "2026-07": 32408,
+        "2026-08": 32286
+      },
+      "reading": "diff = (somme des 4 composantes) - total ; non nul = composantes et total non additifs dans la source ; ne jamais presenter les 4 composantes comme une decomposition exacte hors des mois ou diff = 0"
+    },
+    "latest_month_components_sum_equals_total": false,
+    "total_equals_cash_plus_ssi_plus_ma_only": {
+      "months_exact": 235,
+      "months_total": 236,
+      "exceptions_month_diff": {
+        "2019-08": -5000
+      },
+      "reading": "le total = cash assistance + SSI + medical assistance only (sans la colonne nursing home) ; la colonne nursing home n'est pas additive au total (sous-ensemble ou comptage a part, non precise par la source)"
+    },
+    "latest_nursing_home_equals_sum_minus_total": true,
+    "latest": {
+      "month": "2026-08",
+      "cash_assistance": 571702,
+      "ssi": 320988,
+      "nursing_home": 32286,
+      "medical_assistance_only": 508347,
+      "total": 1401037
+    },
+    "previous_month": {
+      "month": "2026-07",
+      "cash_assistance": 574197,
+      "ssi": 320800,
+      "nursing_home": 32408,
+      "medical_assistance_only": 515249,
+      "total": 1410246
+    },
+    "change_vs_previous_month_abs": -9209,
+    "same_month_previous_year": {
+      "month": "2025-08",
+      "cash_assistance": 594762,
+      "ssi": 329194,
+      "nursing_home": 31338,
+      "medical_assistance_only": 640699,
+      "total": 1564655
+    },
+    "change_vs_same_month_previous_year_abs": -163618,
+    "change_vs_same_month_previous_year_pct": -10.46,
+    "peak_month": {
+      "month": "2013-01",
+      "total": 3120366
+    },
+    "trough_month": {
+      "month": "2026-08",
+      "total": 1401037
+    },
+    "latest_vs_peak_pct": -55.1,
+    "latest_components_share_pct": {
+      "cash_assistance": 40.8,
+      "ssi": 22.9,
+      "nursing_home": 2.3,
+      "medical_assistance_only": 36.3
+    },
+    "last_13_months": [
+      {
+        "month": "2025-08",
+        "cash_assistance": 594762,
+        "ssi": 329194,
+        "nursing_home": 31338,
+        "medical_assistance_only": 640699,
+        "total": 1564655
+      },
+      {
+        "month": "2025-09",
+        "cash_assistance": 588564,
+        "ssi": 328507,
+        "nursing_home": 32018,
+        "medical_assistance_only": 624077,
+        "total": 1541148
+      },
+      {
+        "month": "2025-10",
+        "cash_assistance": 598187,
+        "ssi": 327453,
+        "nursing_home": 32464,
+        "medical_assistance_only": 614970,
+        "total": 1540610
+      },
+      {
+        "month": "2025-11",
+        "cash_assistance": 595232,
+        "ssi": 326341,
+        "nursing_home": 32924,
+        "medical_assistance_only": 602573,
+        "total": 1524146
+      },
+      {
+        "month": "2025-12",
+        "cash_assistance": 576991,
+        "ssi": 327047,
+        "nursing_home": 32689,
+        "medical_assistance_only": 589824,
+        "total": 1493862
+      },
+      {
+        "month": "2026-01",
+        "cash_assistance": 584518,
+        "ssi": 325933,
+        "nursing_home": 33126,
+        "medical_assistance_only": 583565,
+        "total": 1494016
+      },
+      {
+        "month": "2026-02",
+        "cash_assistance": 583658,
+        "ssi": 325606,
+        "nursing_home": 33223,
+        "medical_assistance_only": 569717,
+        "total": 1478981
+      },
+      {
+        "month": "2026-03",
+        "cash_assistance": 573307,
+        "ssi": 324717,
+        "nursing_home": 33201,
+        "medical_assistance_only": 554334,
+        "total": 1452358
+      },
+      {
+        "month": "2026-04",
+        "cash_assistance": 574288,
+        "ssi": 323362,
+        "nursing_home": 33126,
+        "medical_assistance_only": 539557,
+        "total": 1437207
+      },
+      {
+        "month": "2026-05",
+        "cash_assistance": 583757,
+        "ssi": 323113,
+        "nursing_home": 32741,
+        "medical_assistance_only": 528490,
+        "total": 1435360
+      },
+      {
+        "month": "2026-06",
+        "cash_assistance": 562379,
+        "ssi": 321513,
+        "nursing_home": 32282,
+        "medical_assistance_only": 519425,
+        "total": 1403317
+      },
+      {
+        "month": "2026-07",
+        "cash_assistance": 574197,
+        "ssi": 320800,
+        "nursing_home": 32408,
+        "medical_assistance_only": 515249,
+        "total": 1410246
+      },
+      {
+        "month": "2026-08",
+        "cash_assistance": 571702,
+        "ssi": 320988,
+        "nursing_home": 32286,
+        "medical_assistance_only": 508347,
+        "total": 1401037
+      }
+    ],
+    "series_full": [
+      {
+        "month": "2007-01",
+        "cash_assistance": 369672,
+        "ssi": 407863,
+        "nursing_home": 40943,
+        "medical_assistance_only": 1775529,
+        "total": 2553064
+      },
+      {
+        "month": "2007-02",
+        "cash_assistance": 363960,
+        "ssi": 407459,
+        "nursing_home": 40536,
+        "medical_assistance_only": 1761643,
+        "total": 2533062
+      },
+      {
+        "month": "2007-03",
+        "cash_assistance": 363130,
+        "ssi": 408022,
+        "nursing_home": 40276,
+        "medical_assistance_only": 1789563,
+        "total": 2560715
+      },
+      {
+        "month": "2007-04",
+        "cash_assistance": 358717,
+        "ssi": 407465,
+        "nursing_home": 40087,
+        "medical_assistance_only": 1772670,
+        "total": 2538852
+      },
+      {
+        "month": "2007-05",
+        "cash_assistance": 355795,
+        "ssi": 408011,
+        "nursing_home": 39707,
+        "medical_assistance_only": 1786408,
+        "total": 2550214
+      },
+      {
+        "month": "2007-06",
+        "cash_assistance": 356232,
+        "ssi": 408190,
+        "nursing_home": 39923,
+        "medical_assistance_only": 1795555,
+        "total": 2559977
+      },
+      {
+        "month": "2007-07",
+        "cash_assistance": 351704,
+        "ssi": 407474,
+        "nursing_home": 39954,
+        "medical_assistance_only": 1806509,
+        "total": 2565687
+      },
+      {
+        "month": "2007-08",
+        "cash_assistance": 353144,
+        "ssi": 407284,
+        "nursing_home": 40046,
+        "medical_assistance_only": 1821868,
+        "total": 2582296
+      },
+      {
+        "month": "2007-09",
+        "cash_assistance": 353802,
+        "ssi": 408391,
+        "nursing_home": 39998,
+        "medical_assistance_only": 1824960,
+        "total": 2587153
+      },
+      {
+        "month": "2007-10",
+        "cash_assistance": 350510,
+        "ssi": 407217,
+        "nursing_home": 39594,
+        "medical_assistance_only": 1827385,
+        "total": 2585112
+      },
+      {
+        "month": "2007-11",
+        "cash_assistance": 351207,
+        "ssi": 407530,
+        "nursing_home": 39536,
+        "medical_assistance_only": 1822063,
+        "total": 2580800
+      },
+      {
+        "month": "2007-12",
+        "cash_assistance": 344417,
+        "ssi": 408121,
+        "nursing_home": 39257,
+        "medical_assistance_only": 1813288,
+        "total": 2565826
+      },
+      {
+        "month": "2008-01",
+        "cash_assistance": 346039,
+        "ssi": 407373,
+        "nursing_home": 39403,
+        "medical_assistance_only": 1799486,
+        "total": 2552898
+      },
+      {
+        "month": "2008-02",
+        "cash_assistance": 342505,
+        "ssi": 406891,
+        "nursing_home": 39637,
+        "medical_assistance_only": 1806136,
+        "total": 2555532
+      },
+      {
+        "month": "2008-03",
+        "cash_assistance": 338658,
+        "ssi": 406539,
+        "nursing_home": 39227,
+        "medical_assistance_only": 1809331,
+        "total": 2554528
+      },
+      {
+        "month": "2008-04",
+        "cash_assistance": 340723,
+        "ssi": 406227,
+        "nursing_home": 39272,
+        "medical_assistance_only": 1812081,
+        "total": 2559031
+      },
+      {
+        "month": "2008-05",
+        "cash_assistance": 341176,
+        "ssi": 407504,
+        "nursing_home": 39310,
+        "medical_assistance_only": 1819998,
+        "total": 2568678
+      },
+      {
+        "month": "2008-06",
+        "cash_assistance": 336156,
+        "ssi": 407295,
+        "nursing_home": 39143,
+        "medical_assistance_only": 1820368,
+        "total": 2563819
+      },
+      {
+        "month": "2008-07",
+        "cash_assistance": 336583,
+        "ssi": 408185,
+        "nursing_home": 39822,
+        "medical_assistance_only": 1823805,
+        "total": 2568573
+      },
+      {
+        "month": "2008-08",
+        "cash_assistance": 336222,
+        "ssi": 409355,
+        "nursing_home": 40150,
+        "medical_assistance_only": 1840064,
+        "total": 2585641
+      },
+      {
+        "month": "2008-09",
+        "cash_assistance": 335130,
+        "ssi": 408697,
+        "nursing_home": 39860,
+        "medical_assistance_only": 1852406,
+        "total": 2596233
+      },
+      {
+        "month": "2008-10",
+        "cash_assistance": 336732,
+        "ssi": 409965,
+        "nursing_home": 40315,
+        "medical_assistance_only": 1871007,
+        "total": 2617704
+      },
+      {
+        "month": "2008-11",
+        "cash_assistance": 339994,
+        "ssi": 411142,
+        "nursing_home": 40487,
+        "medical_assistance_only": 1870149,
+        "total": 2621285
+      },
+      {
+        "month": "2008-12",
+        "cash_assistance": 337367,
+        "ssi": 411980,
+        "nursing_home": 40186,
+        "medical_assistance_only": 1872936,
+        "total": 2622283
+      },
+      {
+        "month": "2009-01",
+        "cash_assistance": 341497,
+        "ssi": 414199,
+        "nursing_home": 40091,
+        "medical_assistance_only": 1887750,
+        "total": 2643446
+      },
+      {
+        "month": "2009-02",
+        "cash_assistance": 340399,
+        "ssi": 413931,
+        "nursing_home": 39983,
+        "medical_assistance_only": 1896219,
+        "total": 2650549
+      },
+      {
+        "month": "2009-03",
+        "cash_assistance": 339858,
+        "ssi": 413044,
+        "nursing_home": 39909,
+        "medical_assistance_only": 1907716,
+        "total": 2660618
+      },
+      {
+        "month": "2009-04",
+        "cash_assistance": 341717,
+        "ssi": 413202,
+        "nursing_home": 39749,
+        "medical_assistance_only": 1911787,
+        "total": 2666706
+      },
+      {
+        "month": "2009-05",
+        "cash_assistance": 343306,
+        "ssi": 414561,
+        "nursing_home": 39412,
+        "medical_assistance_only": 1938037,
+        "total": 2695904
+      },
+      {
+        "month": "2009-06",
+        "cash_assistance": 343032,
+        "ssi": 412735,
+        "nursing_home": 39695,
+        "medical_assistance_only": 1949180,
+        "total": 2704947
+      },
+      {
+        "month": "2009-07",
+        "cash_assistance": 347907,
+        "ssi": 413466,
+        "nursing_home": 39490,
+        "medical_assistance_only": 1981193,
+        "total": 2742566
+      },
+      {
+        "month": "2009-08",
+        "cash_assistance": 347565,
+        "ssi": 413778,
+        "nursing_home": 39109,
+        "medical_assistance_only": 1991076,
+        "total": 2752419
+      },
+      {
+        "month": "2009-09",
+        "cash_assistance": 349939,
+        "ssi": 413764,
+        "nursing_home": 39241,
+        "medical_assistance_only": 2005814,
+        "total": 2769517
+      },
+      {
+        "month": "2009-10",
+        "cash_assistance": 357463,
+        "ssi": 414673,
+        "nursing_home": 39412,
+        "medical_assistance_only": 2037506,
+        "total": 2809642
+      },
+      {
+        "month": "2009-11",
+        "cash_assistance": 354893,
+        "ssi": 413729,
+        "nursing_home": 39462,
+        "medical_assistance_only": 2046528,
+        "total": 2815150
+      },
+      {
+        "month": "2009-12",
+        "cash_assistance": 354544,
+        "ssi": 413072,
+        "nursing_home": 38989,
+        "medical_assistance_only": 2050609,
+        "total": 2818225
+      },
+      {
+        "month": "2010-01",
+        "cash_assistance": 357560,
+        "ssi": 414535,
+        "nursing_home": 39005,
+        "medical_assistance_only": 2066795,
+        "total": 2838890
+      },
+      {
+        "month": "2010-02",
+        "cash_assistance": 353317,
+        "ssi": 414446,
+        "nursing_home": 39409,
+        "medical_assistance_only": 2071249,
+        "total": 2839012
+      },
+      {
+        "month": "2010-03",
+        "cash_assistance": 344533,
+        "ssi": 413349,
+        "nursing_home": 38830,
+        "medical_assistance_only": 2073613,
+        "total": 2831495
+      },
+      {
+        "month": "2010-04",
+        "cash_assistance": 346439,
+        "ssi": 414289,
+        "nursing_home": 38673,
+        "medical_assistance_only": 2093698,
+        "total": 2854426
+      },
+      {
+        "month": "2010-05",
+        "cash_assistance": 345897,
+        "ssi": 415831,
+        "nursing_home": 38719,
+        "medical_assistance_only": 2088032,
+        "total": 2849760
+      },
+      {
+        "month": "2010-06",
+        "cash_assistance": 340279,
+        "ssi": 414905,
+        "nursing_home": 38244,
+        "medical_assistance_only": 2088380,
+        "total": 2843564
+      },
+      {
+        "month": "2010-07",
+        "cash_assistance": 346927,
+        "ssi": 416655,
+        "nursing_home": 38113,
+        "medical_assistance_only": 2100398,
+        "total": 2863980
+      },
+      {
+        "month": "2010-08",
+        "cash_assistance": 344105,
+        "ssi": 416046,
+        "nursing_home": 38316,
+        "medical_assistance_only": 2103497,
+        "total": 2863648
+      },
+      {
+        "month": "2010-09",
+        "cash_assistance": 349295,
+        "ssi": 415275,
+        "nursing_home": 38149,
+        "medical_assistance_only": 2101105,
+        "total": 2865675
+      },
+      {
+        "month": "2010-10",
+        "cash_assistance": 356841,
+        "ssi": 416741,
+        "nursing_home": 38692,
+        "medical_assistance_only": 2119312,
+        "total": 2892894
+      },
+      {
+        "month": "2010-11",
+        "cash_assistance": 352797,
+        "ssi": 416051,
+        "nursing_home": 38410,
+        "medical_assistance_only": 2122708,
+        "total": 2891556
+      },
+      {
+        "month": "2010-12",
+        "cash_assistance": 355463,
+        "ssi": 417183,
+        "nursing_home": 38459,
+        "medical_assistance_only": 2135670,
+        "total": 2908316
+      },
+      {
+        "month": "2011-01",
+        "cash_assistance": 357333,
+        "ssi": 416029,
+        "nursing_home": 38232,
+        "medical_assistance_only": 2130487,
+        "total": 2903849
+      },
+      {
+        "month": "2011-02",
+        "cash_assistance": 351730,
+        "ssi": 416191,
+        "nursing_home": 37450,
+        "medical_assistance_only": 2127369,
+        "total": 2895290
+      },
+      {
+        "month": "2011-03",
+        "cash_assistance": 352377,
+        "ssi": 416104,
+        "nursing_home": 37297,
+        "medical_assistance_only": 2132266,
+        "total": 2900747
+      },
+      {
+        "month": "2011-04",
+        "cash_assistance": 354942,
+        "ssi": 417217,
+        "nursing_home": 37268,
+        "medical_assistance_only": 2143568,
+        "total": 2915727
+      },
+      {
+        "month": "2011-05",
+        "cash_assistance": 348344,
+        "ssi": 415530,
+        "nursing_home": 37078,
+        "medical_assistance_only": 2148312,
+        "total": 2912186
+      },
+      {
+        "month": "2011-06",
+        "cash_assistance": 345605,
+        "ssi": 416213,
+        "nursing_home": 36911,
+        "medical_assistance_only": 2150868,
+        "total": 2912686
+      },
+      {
+        "month": "2011-07",
+        "cash_assistance": 347733,
+        "ssi": 417775,
+        "nursing_home": 37037,
+        "medical_assistance_only": 2162444,
+        "total": 2927952
+      },
+      {
+        "month": "2011-08",
+        "cash_assistance": 342379,
+        "ssi": 416845,
+        "nursing_home": 37031,
+        "medical_assistance_only": 2166871,
+        "total": 2926095
+      },
+      {
+        "month": "2011-09",
+        "cash_assistance": 348084,
+        "ssi": 416358,
+        "nursing_home": 37666,
+        "medical_assistance_only": 2179866,
+        "total": 2944308
+      },
+      {
+        "month": "2011-10",
+        "cash_assistance": 347031,
+        "ssi": 415846,
+        "nursing_home": 37715,
+        "medical_assistance_only": 2186259,
+        "total": 2949136
+      },
+      {
+        "month": "2011-11",
+        "cash_assistance": 345377,
+        "ssi": 416318,
+        "nursing_home": 37597,
+        "medical_assistance_only": 2176451,
+        "total": 2938146
+      },
+      {
+        "month": "2011-12",
+        "cash_assistance": 349238,
+        "ssi": 418238,
+        "nursing_home": 37381,
+        "medical_assistance_only": 2186785,
+        "total": 2954261
+      },
+      {
+        "month": "2012-01",
+        "cash_assistance": 347998,
+        "ssi": 416434,
+        "nursing_home": 37161,
+        "medical_assistance_only": 2189257,
+        "total": 2953689
+      },
+      {
+        "month": "2012-02",
+        "cash_assistance": 341817,
+        "ssi": 416344,
+        "nursing_home": 37511,
+        "medical_assistance_only": 2188362,
+        "total": 2946523
+      },
+      {
+        "month": "2012-03",
+        "cash_assistance": 346504,
+        "ssi": 417512,
+        "nursing_home": 37883,
+        "medical_assistance_only": 2213403,
+        "total": 2977419
+      },
+      {
+        "month": "2012-04",
+        "cash_assistance": 343076,
+        "ssi": 416164,
+        "nursing_home": 37621,
+        "medical_assistance_only": 2224984,
+        "total": 2984224
+      },
+      {
+        "month": "2012-05",
+        "cash_assistance": 344148,
+        "ssi": 415859,
+        "nursing_home": 38077,
+        "medical_assistance_only": 2223095,
+        "total": 2983102
+      },
+      {
+        "month": "2012-06",
+        "cash_assistance": 347927,
+        "ssi": 416996,
+        "nursing_home": 38221,
+        "medical_assistance_only": 2241550,
+        "total": 3006473
+      },
+      {
+        "month": "2012-07",
+        "cash_assistance": 343522,
+        "ssi": 415562,
+        "nursing_home": 38347,
+        "medical_assistance_only": 2254895,
+        "total": 3013979
+      },
+      {
+        "month": "2012-08",
+        "cash_assistance": 347353,
+        "ssi": 415535,
+        "nursing_home": 38746,
+        "medical_assistance_only": 2272612,
+        "total": 3035500
+      },
+      {
+        "month": "2012-09",
+        "cash_assistance": 350853,
+        "ssi": 415966,
+        "nursing_home": 38723,
+        "medical_assistance_only": 2287095,
+        "total": 3053914
+      },
+      {
+        "month": "2012-10",
+        "cash_assistance": 349182,
+        "ssi": 414518,
+        "nursing_home": 38171,
+        "medical_assistance_only": 2291932,
+        "total": 3055632
+      },
+      {
+        "month": "2012-11",
+        "cash_assistance": 360731,
+        "ssi": 416660,
+        "nursing_home": 38237,
+        "medical_assistance_only": 2284952,
+        "total": 3062343
+      },
+      {
+        "month": "2012-12",
+        "cash_assistance": 351360,
+        "ssi": 420076,
+        "nursing_home": 38475,
+        "medical_assistance_only": 2313199,
+        "total": 3084635
+      },
+      {
+        "month": "2013-01",
+        "cash_assistance": 356375,
+        "ssi": 416221,
+        "nursing_home": 37784,
+        "medical_assistance_only": 2347770,
+        "total": 3120366
+      },
+      {
+        "month": "2013-02",
+        "cash_assistance": 356356,
+        "ssi": 416563,
+        "nursing_home": 37451,
+        "medical_assistance_only": 2315928,
+        "total": 3088847
+      },
+      {
+        "month": "2013-03",
+        "cash_assistance": 358065,
+        "ssi": 417246,
+        "nursing_home": 37578,
+        "medical_assistance_only": 2291408,
+        "total": 3066719
+      },
+      {
+        "month": "2013-04",
+        "cash_assistance": 352658,
+        "ssi": 415933,
+        "nursing_home": 36936,
+        "medical_assistance_only": 2297607,
+        "total": 3066198
+      },
+      {
+        "month": "2013-05",
+        "cash_assistance": 355030,
+        "ssi": 416311,
+        "nursing_home": 37073,
+        "medical_assistance_only": 2311532,
+        "total": 3082873
+      },
+      {
+        "month": "2013-06",
+        "cash_assistance": 349962,
+        "ssi": 417769,
+        "nursing_home": 37113,
+        "medical_assistance_only": 2317894,
+        "total": 3085625
+      },
+      {
+        "month": "2013-07",
+        "cash_assistance": 342655,
+        "ssi": 416797,
+        "nursing_home": 37005,
+        "medical_assistance_only": 2327567,
+        "total": 3087019
+      },
+      {
+        "month": "2013-08",
+        "cash_assistance": 346722,
+        "ssi": 418400,
+        "nursing_home": 37161,
+        "medical_assistance_only": 2338014,
+        "total": 3103136
+      },
+      {
+        "month": "2013-09",
+        "cash_assistance": 339214,
+        "ssi": 417103,
+        "nursing_home": 37126,
+        "medical_assistance_only": 2340623,
+        "total": 3096940
+      },
+      {
+        "month": "2013-10",
+        "cash_assistance": 343425,
+        "ssi": 418011,
+        "nursing_home": 37286,
+        "medical_assistance_only": 2341231,
+        "total": 3102667
+      },
+      {
+        "month": "2013-11",
+        "cash_assistance": 345715,
+        "ssi": 418774,
+        "nursing_home": 37280,
+        "medical_assistance_only": 2336350,
+        "total": 3100839
+      },
+      {
+        "month": "2013-12",
+        "cash_assistance": 333474,
+        "ssi": 417621,
+        "nursing_home": 37049,
+        "medical_assistance_only": 2301857,
+        "total": 3052952
+      },
+      {
+        "month": "2014-01",
+        "cash_assistance": 333763,
+        "ssi": 417358,
+        "nursing_home": 36883,
+        "medical_assistance_only": 2287537,
+        "total": 3038658
+      },
+      {
+        "month": "2014-02",
+        "cash_assistance": 332364,
+        "ssi": 417536,
+        "nursing_home": 36524,
+        "medical_assistance_only": 2251499,
+        "total": 3001399
+      },
+      {
+        "month": "2014-03",
+        "cash_assistance": 325673,
+        "ssi": 417219,
+        "nursing_home": 36454,
+        "medical_assistance_only": 2210724,
+        "total": 2953616
+      },
+      {
+        "month": "2014-04",
+        "cash_assistance": 324654,
+        "ssi": 417737,
+        "nursing_home": 36357,
+        "medical_assistance_only": 2159999,
+        "total": 2902390
+      },
+      {
+        "month": "2014-05",
+        "cash_assistance": 328590,
+        "ssi": 419694,
+        "nursing_home": 36052,
+        "medical_assistance_only": 2113905,
+        "total": 2862189
+      },
+      {
+        "month": "2014-06",
+        "cash_assistance": 325488,
+        "ssi": 418048,
+        "nursing_home": 36205,
+        "medical_assistance_only": 2064467,
+        "total": 2808003
+      },
+      {
+        "month": "2014-07",
+        "cash_assistance": 332040,
+        "ssi": 417270,
+        "nursing_home": 36291,
+        "medical_assistance_only": 2016569,
+        "total": 2765879
+      },
+      {
+        "month": "2014-08",
+        "cash_assistance": 337654,
+        "ssi": 418519,
+        "nursing_home": 36283,
+        "medical_assistance_only": 1966730,
+        "total": 2722903
+      },
+      {
+        "month": "2014-09",
+        "cash_assistance": 335577,
+        "ssi": 416437,
+        "nursing_home": 36126,
+        "medical_assistance_only": 1921170,
+        "total": 2673184
+      },
+      {
+        "month": "2014-10",
+        "cash_assistance": 342415,
+        "ssi": 416411,
+        "nursing_home": 36111,
+        "medical_assistance_only": 1867853,
+        "total": 2626679
+      },
+      {
+        "month": "2014-11",
+        "cash_assistance": 346945,
+        "ssi": 416701,
+        "nursing_home": 36236,
+        "medical_assistance_only": 1812446,
+        "total": 2576092
+      },
+      {
+        "month": "2014-12",
+        "cash_assistance": 343196,
+        "ssi": 415548,
+        "nursing_home": 35964,
+        "medical_assistance_only": 1792953,
+        "total": 2551697
+      },
+      {
+        "month": "2015-01",
+        "cash_assistance": 348342,
+        "ssi": 415972,
+        "nursing_home": 36045,
+        "medical_assistance_only": 1739949,
+        "total": 2504263
+      },
+      {
+        "month": "2015-02",
+        "cash_assistance": 348703,
+        "ssi": 414458,
+        "nursing_home": 35645,
+        "medical_assistance_only": 1713165,
+        "total": 2476326
+      },
+      {
+        "month": "2015-03",
+        "cash_assistance": 345639,
+        "ssi": 411939,
+        "nursing_home": 35593,
+        "medical_assistance_only": 1687844,
+        "total": 2445422
+      },
+      {
+        "month": "2015-04",
+        "cash_assistance": 347119,
+        "ssi": 411309,
+        "nursing_home": 35429,
+        "medical_assistance_only": 1653481,
+        "total": 2411909
+      },
+      {
+        "month": "2015-05",
+        "cash_assistance": 351622,
+        "ssi": 412587,
+        "nursing_home": 35392,
+        "medical_assistance_only": 1633112,
+        "total": 2397321
+      },
+      {
+        "month": "2015-06",
+        "cash_assistance": 352900,
+        "ssi": 410745,
+        "nursing_home": 35179,
+        "medical_assistance_only": 1608118,
+        "total": 2371763
+      },
+      {
+        "month": "2015-07",
+        "cash_assistance": 354269,
+        "ssi": 410278,
+        "nursing_home": 35210,
+        "medical_assistance_only": 1580959,
+        "total": 2345506
+      },
+      {
+        "month": "2015-08",
+        "cash_assistance": 356918,
+        "ssi": 410415,
+        "nursing_home": 35054,
+        "medical_assistance_only": 1549632,
+        "total": 2316965
+      },
+      {
+        "month": "2015-09",
+        "cash_assistance": 359646,
+        "ssi": 409802,
+        "nursing_home": 34833,
+        "medical_assistance_only": 1520053,
+        "total": 2289501
+      },
+      {
+        "month": "2015-10",
+        "cash_assistance": 363041,
+        "ssi": 411428,
+        "nursing_home": 35146,
+        "medical_assistance_only": 1496340,
+        "total": 2270809
+      },
+      {
+        "month": "2015-11",
+        "cash_assistance": 360041,
+        "ssi": 409858,
+        "nursing_home": 35165,
+        "medical_assistance_only": 1469253,
+        "total": 2239152
+      },
+      {
+        "month": "2015-12",
+        "cash_assistance": 356394,
+        "ssi": 409192,
+        "nursing_home": 34686,
+        "medical_assistance_only": 1442141,
+        "total": 2207727
+      },
+      {
+        "month": "2016-01",
+        "cash_assistance": 362092,
+        "ssi": 411494,
+        "nursing_home": 34438,
+        "medical_assistance_only": 1423364,
+        "total": 2196950
+      },
+      {
+        "month": "2016-02",
+        "cash_assistance": 357694,
+        "ssi": 411581,
+        "nursing_home": 34125,
+        "medical_assistance_only": 1406568,
+        "total": 2175843
+      },
+      {
+        "month": "2016-03",
+        "cash_assistance": 354121,
+        "ssi": 410225,
+        "nursing_home": 33732,
+        "medical_assistance_only": 1387459,
+        "total": 2151805
+      },
+      {
+        "month": "2016-04",
+        "cash_assistance": 359392,
+        "ssi": 411054,
+        "nursing_home": 33277,
+        "medical_assistance_only": 1365932,
+        "total": 2136378
+      },
+      {
+        "month": "2016-05",
+        "cash_assistance": 354085,
+        "ssi": 407703,
+        "nursing_home": 32765,
+        "medical_assistance_only": 1346478,
+        "total": 2108266
+      },
+      {
+        "month": "2016-06",
+        "cash_assistance": 356830,
+        "ssi": 407747,
+        "nursing_home": 32159,
+        "medical_assistance_only": 1321211,
+        "total": 2085788
+      },
+      {
+        "month": "2016-07",
+        "cash_assistance": 362234,
+        "ssi": 408685,
+        "nursing_home": 32016,
+        "medical_assistance_only": 1303170,
+        "total": 2074089
+      },
+      {
+        "month": "2016-08",
+        "cash_assistance": 358827,
+        "ssi": 407194,
+        "nursing_home": 31542,
+        "medical_assistance_only": 1285379,
+        "total": 2051400
+      },
+      {
+        "month": "2016-09",
+        "cash_assistance": 364100,
+        "ssi": 407467,
+        "nursing_home": 31340,
+        "medical_assistance_only": 1262070,
+        "total": 2033637
+      },
+      {
+        "month": "2016-10",
+        "cash_assistance": 362497,
+        "ssi": 406737,
+        "nursing_home": 31102,
+        "medical_assistance_only": 1243366,
+        "total": 2012600
+      },
+      {
+        "month": "2016-11",
+        "cash_assistance": 364390,
+        "ssi": 406101,
+        "nursing_home": 30844,
+        "medical_assistance_only": 1224754,
+        "total": 1995245
+      },
+      {
+        "month": "2016-12",
+        "cash_assistance": 366076,
+        "ssi": 407224,
+        "nursing_home": 30709,
+        "medical_assistance_only": 1208174,
+        "total": 1981474
+      },
+      {
+        "month": "2017-01",
+        "cash_assistance": 357685,
+        "ssi": 405192,
+        "nursing_home": 30323,
+        "medical_assistance_only": 1189528,
+        "total": 1952405
+      },
+      {
+        "month": "2017-02",
+        "cash_assistance": 356556,
+        "ssi": 404313,
+        "nursing_home": 29991,
+        "medical_assistance_only": 1172570,
+        "total": 1933439
+      },
+      {
+        "month": "2017-03",
+        "cash_assistance": 351584,
+        "ssi": 403161,
+        "nursing_home": 29637,
+        "medical_assistance_only": 1161927,
+        "total": 1916672
+      },
+      {
+        "month": "2017-04",
+        "cash_assistance": 356100,
+        "ssi": 404309,
+        "nursing_home": 29728,
+        "medical_assistance_only": 1143780,
+        "total": 1904189
+      },
+      {
+        "month": "2017-05",
+        "cash_assistance": 350626,
+        "ssi": 402250,
+        "nursing_home": 29702,
+        "medical_assistance_only": 1126904,
+        "total": 1879780
+      },
+      {
+        "month": "2017-06",
+        "cash_assistance": 356930,
+        "ssi": 402623,
+        "nursing_home": 30096,
+        "medical_assistance_only": 1109952,
+        "total": 1869505
+      },
+      {
+        "month": "2017-07",
+        "cash_assistance": 352341,
+        "ssi": 403135,
+        "nursing_home": 30036,
+        "medical_assistance_only": 1097828,
+        "total": 1853304
+      },
+      {
+        "month": "2017-08",
+        "cash_assistance": 352718,
+        "ssi": 402475,
+        "nursing_home": 30225,
+        "medical_assistance_only": 1079999,
+        "total": 1835192
+      },
+      {
+        "month": "2017-09",
+        "cash_assistance": 357325,
+        "ssi": 402264,
+        "nursing_home": 30096,
+        "medical_assistance_only": 1066276,
+        "total": 1825865
+      },
+      {
+        "month": "2017-10",
+        "cash_assistance": 351520,
+        "ssi": 403301,
+        "nursing_home": 29985,
+        "medical_assistance_only": 1055431,
+        "total": 1810252
+      },
+      {
+        "month": "2017-11",
+        "cash_assistance": 353700,
+        "ssi": 402157,
+        "nursing_home": 30068,
+        "medical_assistance_only": 1036341,
+        "total": 1792198
+      },
+      {
+        "month": "2017-12",
+        "cash_assistance": 358561,
+        "ssi": 401823,
+        "nursing_home": 30189,
+        "medical_assistance_only": 1029485,
+        "total": 1789869
+      },
+      {
+        "month": "2018-01",
+        "cash_assistance": 352070,
+        "ssi": 402039,
+        "nursing_home": 29896,
+        "medical_assistance_only": 1017121,
+        "total": 1771230
+      },
+      {
+        "month": "2018-02",
+        "cash_assistance": 353773,
+        "ssi": 402190,
+        "nursing_home": 29732,
+        "medical_assistance_only": 1004281,
+        "total": 1760244
+      },
+      {
+        "month": "2018-03",
+        "cash_assistance": 350577,
+        "ssi": 400942,
+        "nursing_home": 29171,
+        "medical_assistance_only": 1002253,
+        "total": 1753772
+      },
+      {
+        "month": "2018-04",
+        "cash_assistance": 343456,
+        "ssi": 400773,
+        "nursing_home": 29258,
+        "medical_assistance_only": 993135,
+        "total": 1737364
+      },
+      {
+        "month": "2018-05",
+        "cash_assistance": 341232,
+        "ssi": 400578,
+        "nursing_home": 28985,
+        "medical_assistance_only": 986095,
+        "total": 1727905
+      },
+      {
+        "month": "2018-06",
+        "cash_assistance": 345576,
+        "ssi": 400445,
+        "nursing_home": 29187,
+        "medical_assistance_only": 979491,
+        "total": 1725512
+      },
+      {
+        "month": "2018-07",
+        "cash_assistance": 337747,
+        "ssi": 400131,
+        "nursing_home": 29090,
+        "medical_assistance_only": 975112,
+        "total": 1712990
+      },
+      {
+        "month": "2018-08",
+        "cash_assistance": 343681,
+        "ssi": 398983,
+        "nursing_home": 29466,
+        "medical_assistance_only": 965969,
+        "total": 1708633
+      },
+      {
+        "month": "2018-09",
+        "cash_assistance": 343805,
+        "ssi": 399341,
+        "nursing_home": 30099,
+        "medical_assistance_only": 961960,
+        "total": 1705106
+      },
+      {
+        "month": "2018-10",
+        "cash_assistance": 337875,
+        "ssi": 398523,
+        "nursing_home": 30535,
+        "medical_assistance_only": 950731,
+        "total": 1687129
+      },
+      {
+        "month": "2018-11",
+        "cash_assistance": 341846,
+        "ssi": 398280,
+        "nursing_home": 30898,
+        "medical_assistance_only": 936246,
+        "total": 1676372
+      },
+      {
+        "month": "2018-12",
+        "cash_assistance": 334223,
+        "ssi": 397669,
+        "nursing_home": 31022,
+        "medical_assistance_only": 926558,
+        "total": 1658450
+      },
+      {
+        "month": "2019-01",
+        "cash_assistance": 334881,
+        "ssi": 396767,
+        "nursing_home": 30963,
+        "medical_assistance_only": 915580,
+        "total": 1647228
+      },
+      {
+        "month": "2019-02",
+        "cash_assistance": 334088,
+        "ssi": 395600,
+        "nursing_home": 90768,
+        "medical_assistance_only": 903483,
+        "total": 1633171
+      },
+      {
+        "month": "2019-03",
+        "cash_assistance": 331680,
+        "ssi": 394372,
+        "nursing_home": 30524,
+        "medical_assistance_only": 903454,
+        "total": 1629506
+      },
+      {
+        "month": "2019-04",
+        "cash_assistance": 325468,
+        "ssi": 392184,
+        "nursing_home": 30368,
+        "medical_assistance_only": 896795,
+        "total": 1614447
+      },
+      {
+        "month": "2019-05",
+        "cash_assistance": 324433,
+        "ssi": 391685,
+        "nursing_home": 30259,
+        "medical_assistance_only": 886737,
+        "total": 1602855
+      },
+      {
+        "month": "2019-06",
+        "cash_assistance": 327961,
+        "ssi": 390622,
+        "nursing_home": 30118,
+        "medical_assistance_only": 874924,
+        "total": 1593507
+      },
+      {
+        "month": "2019-07",
+        "cash_assistance": 322114,
+        "ssi": 389488,
+        "nursing_home": 30038,
+        "medical_assistance_only": 862126,
+        "total": 1573728
+      },
+      {
+        "month": "2019-08",
+        "cash_assistance": 327827,
+        "ssi": 383793,
+        "nursing_home": 29399,
+        "medical_assistance_only": 854291,
+        "total": 1570911
+      },
+      {
+        "month": "2019-09",
+        "cash_assistance": 321856,
+        "ssi": 387635,
+        "nursing_home": 29557,
+        "medical_assistance_only": 847109,
+        "total": 1556600
+      },
+      {
+        "month": "2019-10",
+        "cash_assistance": 321343,
+        "ssi": 387482,
+        "nursing_home": 29472,
+        "medical_assistance_only": 835148,
+        "total": 1543973
+      },
+      {
+        "month": "2019-11",
+        "cash_assistance": 325125,
+        "ssi": 387087,
+        "nursing_home": 29272,
+        "medical_assistance_only": 827019,
+        "total": 1539231
+      },
+      {
+        "month": "2019-12",
+        "cash_assistance": 316082,
+        "ssi": 385803,
+        "nursing_home": 29134,
+        "medical_assistance_only": 814397,
+        "total": 1516282
+      },
+      {
+        "month": "2020-01",
+        "cash_assistance": 316943,
+        "ssi": 384728,
+        "nursing_home": 29063,
+        "medical_assistance_only": 806836,
+        "total": 1508507
+      },
+      {
+        "month": "2020-02",
+        "cash_assistance": 319914,
+        "ssi": 383596,
+        "nursing_home": 29281,
+        "medical_assistance_only": 801895,
+        "total": 1505405
+      },
+      {
+        "month": "2020-03",
+        "cash_assistance": 317742,
+        "ssi": 382419,
+        "nursing_home": 29043,
+        "medical_assistance_only": 792501,
+        "total": 1492662
+      },
+      {
+        "month": "2020-04",
+        "cash_assistance": 347056,
+        "ssi": 379796,
+        "nursing_home": 29072,
+        "medical_assistance_only": 776978,
+        "total": 1503830
+      },
+      {
+        "month": "2020-05",
+        "cash_assistance": 376153,
+        "ssi": 375335,
+        "nursing_home": 28378,
+        "medical_assistance_only": 780613,
+        "total": 1532101
+      },
+      {
+        "month": "2020-06",
+        "cash_assistance": 387045,
+        "ssi": 373538,
+        "nursing_home": 26900,
+        "medical_assistance_only": 780638,
+        "total": 1541221
+      },
+      {
+        "month": "2020-07",
+        "cash_assistance": 389362,
+        "ssi": 371300,
+        "nursing_home": 31530,
+        "medical_assistance_only": 792116,
+        "total": 1552778
+      },
+      {
+        "month": "2020-08",
+        "cash_assistance": 390335,
+        "ssi": 370358,
+        "nursing_home": 31479,
+        "medical_assistance_only": 791194,
+        "total": 1551887
+      },
+      {
+        "month": "2020-09",
+        "cash_assistance": 382901,
+        "ssi": 369698,
+        "nursing_home": 31500,
+        "medical_assistance_only": 797684,
+        "total": 1550283
+      },
+      {
+        "month": "2020-10",
+        "cash_assistance": 378781,
+        "ssi": 368449,
+        "nursing_home": 31218,
+        "medical_assistance_only": 807848,
+        "total": 1555078
+      },
+      {
+        "month": "2020-11",
+        "cash_assistance": 368080,
+        "ssi": 367641,
+        "nursing_home": 31243,
+        "medical_assistance_only": 814041,
+        "total": 1549762
+      },
+      {
+        "month": "2020-12",
+        "cash_assistance": 364018,
+        "ssi": 365674,
+        "nursing_home": 31389,
+        "medical_assistance_only": 819954,
+        "total": 1549646
+      },
+      {
+        "month": "2021-01",
+        "cash_assistance": 367295,
+        "ssi": 364098,
+        "nursing_home": 31444,
+        "medical_assistance_only": 832154,
+        "total": 1563547
+      },
+      {
+        "month": "2021-02",
+        "cash_assistance": 370114,
+        "ssi": 362641,
+        "nursing_home": 31585,
+        "medical_assistance_only": 836581,
+        "total": 1569336
+      },
+      {
+        "month": "2021-03",
+        "cash_assistance": 371703,
+        "ssi": 360665,
+        "nursing_home": 31289,
+        "medical_assistance_only": 846439,
+        "total": 1578807
+      },
+      {
+        "month": "2021-04",
+        "cash_assistance": 373211,
+        "ssi": 358582,
+        "nursing_home": 31467,
+        "medical_assistance_only": 856824,
+        "total": 1588617
+      },
+      {
+        "month": "2021-05",
+        "cash_assistance": 373938,
+        "ssi": 357085,
+        "nursing_home": 31937,
+        "medical_assistance_only": 861134,
+        "total": 1592157
+      },
+      {
+        "month": "2021-06",
+        "cash_assistance": 368628,
+        "ssi": 355227,
+        "nursing_home": 31463,
+        "medical_assistance_only": 867198,
+        "total": 1591053
+      },
+      {
+        "month": "2021-07",
+        "cash_assistance": 364867,
+        "ssi": 354454,
+        "nursing_home": 32101,
+        "medical_assistance_only": 879589,
+        "total": 1598910
+      },
+      {
+        "month": "2021-08",
+        "cash_assistance": 347292,
+        "ssi": 353332,
+        "nursing_home": 32206,
+        "medical_assistance_only": 866098,
+        "total": 1566722
+      },
+      {
+        "month": "2021-09",
+        "cash_assistance": 343301,
+        "ssi": 352869,
+        "nursing_home": 32167,
+        "medical_assistance_only": 863037,
+        "total": 1559207
+      },
+      {
+        "month": "2021-10",
+        "cash_assistance": 354765,
+        "ssi": 352278,
+        "nursing_home": 32609,
+        "medical_assistance_only": 848301,
+        "total": 1555344
+      },
+      {
+        "month": "2021-11",
+        "cash_assistance": 360289,
+        "ssi": 351812,
+        "nursing_home": 32641,
+        "medical_assistance_only": 832435,
+        "total": 1544536
+      },
+      {
+        "month": "2021-12",
+        "cash_assistance": 376757,
+        "ssi": 351679,
+        "nursing_home": 32775,
+        "medical_assistance_only": 820223,
+        "total": 1548659
+      },
+      {
+        "month": "2022-01",
+        "cash_assistance": 386855,
+        "ssi": 350839,
+        "nursing_home": 33098,
+        "medical_assistance_only": 798388,
+        "total": 1536082
+      },
+      {
+        "month": "2022-02",
+        "cash_assistance": 394494,
+        "ssi": 350450,
+        "nursing_home": 33264,
+        "medical_assistance_only": 781779,
+        "total": 1526723
+      },
+      {
+        "month": "2022-03",
+        "cash_assistance": 397303,
+        "ssi": 348069,
+        "nursing_home": 33134,
+        "medical_assistance_only": 771774,
+        "total": 1517146
+      },
+      {
+        "month": "2022-04",
+        "cash_assistance": 406416,
+        "ssi": 347506,
+        "nursing_home": 33265,
+        "medical_assistance_only": 760344,
+        "total": 1514266
+      },
+      {
+        "month": "2022-05",
+        "cash_assistance": 402103,
+        "ssi": 346755,
+        "nursing_home": 33320,
+        "medical_assistance_only": 737557,
+        "total": 1486415
+      },
+      {
+        "month": "2022-06",
+        "cash_assistance": 408150,
+        "ssi": 346399,
+        "nursing_home": 33229,
+        "medical_assistance_only": 719933,
+        "total": 1474482
+      },
+      {
+        "month": "2022-07",
+        "cash_assistance": 417500,
+        "ssi": 346928,
+        "nursing_home": 33527,
+        "medical_assistance_only": 703479,
+        "total": 1467907
+      },
+      {
+        "month": "2022-08",
+        "cash_assistance": 412867,
+        "ssi": 346626,
+        "nursing_home": 33430,
+        "medical_assistance_only": 704748,
+        "total": 1464241
+      },
+      {
+        "month": "2022-09",
+        "cash_assistance": 424759,
+        "ssi": 346305,
+        "nursing_home": 33472,
+        "medical_assistance_only": 707600,
+        "total": 1478664
+      },
+      {
+        "month": "2022-10",
+        "cash_assistance": 425621,
+        "ssi": 346143,
+        "nursing_home": 33758,
+        "medical_assistance_only": 709100,
+        "total": 1480864
+      },
+      {
+        "month": "2022-11",
+        "cash_assistance": 428294,
+        "ssi": 345605,
+        "nursing_home": 33338,
+        "medical_assistance_only": 709490,
+        "total": 1483389
+      },
+      {
+        "month": "2022-12",
+        "cash_assistance": 438927,
+        "ssi": 345462,
+        "nursing_home": 33461,
+        "medical_assistance_only": 714545,
+        "total": 1498934
+      },
+      {
+        "month": "2023-01",
+        "cash_assistance": 436329,
+        "ssi": 344747,
+        "nursing_home": 33364,
+        "medical_assistance_only": 719763,
+        "total": 1500839
+      },
+      {
+        "month": "2023-02",
+        "cash_assistance": 457002,
+        "ssi": 344469,
+        "nursing_home": 33530,
+        "medical_assistance_only": 724167,
+        "total": 1525638
+      },
+      {
+        "month": "2023-03",
+        "cash_assistance": 456402,
+        "ssi": 343409,
+        "nursing_home": 33412,
+        "medical_assistance_only": 732492,
+        "total": 1532303
+      },
+      {
+        "month": "2023-04",
+        "cash_assistance": 467844,
+        "ssi": 343660,
+        "nursing_home": 33611,
+        "medical_assistance_only": 737742,
+        "total": 1549246
+      },
+      {
+        "month": "2023-05",
+        "cash_assistance": 474645,
+        "ssi": 343745,
+        "nursing_home": 33402,
+        "medical_assistance_only": 739562,
+        "total": 1557952
+      },
+      {
+        "month": "2023-06",
+        "cash_assistance": 488113,
+        "ssi": 343627,
+        "nursing_home": 33552,
+        "medical_assistance_only": 740944,
+        "total": 1572684
+      },
+      {
+        "month": "2023-07",
+        "cash_assistance": 481247,
+        "ssi": 342722,
+        "nursing_home": 33669,
+        "medical_assistance_only": 745699,
+        "total": 1569668
+      },
+      {
+        "month": "2023-08",
+        "cash_assistance": 486437,
+        "ssi": 342515,
+        "nursing_home": 33772,
+        "medical_assistance_only": 750261,
+        "total": 1579213
+      },
+      {
+        "month": "2023-09",
+        "cash_assistance": 501682,
+        "ssi": 342614,
+        "nursing_home": 33782,
+        "medical_assistance_only": 760867,
+        "total": 1605163
+      },
+      {
+        "month": "2023-10",
+        "cash_assistance": 483181,
+        "ssi": 342124,
+        "nursing_home": 33622,
+        "medical_assistance_only": 762648,
+        "total": 1587953
+      },
+      {
+        "month": "2023-11",
+        "cash_assistance": 498009,
+        "ssi": 341736,
+        "nursing_home": 33727,
+        "medical_assistance_only": 776478,
+        "total": 1616223
+      },
+      {
+        "month": "2023-12",
+        "cash_assistance": 513366,
+        "ssi": 340886,
+        "nursing_home": 33751,
+        "medical_assistance_only": 786680,
+        "total": 1640932
+      },
+      {
+        "month": "2024-01",
+        "cash_assistance": 524343,
+        "ssi": 341118,
+        "nursing_home": 33910,
+        "medical_assistance_only": 796178,
+        "total": 1661639
+      },
+      {
+        "month": "2024-02",
+        "cash_assistance": 541480,
+        "ssi": 341100,
+        "nursing_home": 34132,
+        "medical_assistance_only": 803138,
+        "total": 1685718
+      },
+      {
+        "month": "2024-03",
+        "cash_assistance": 547025,
+        "ssi": 340370,
+        "nursing_home": 34596,
+        "medical_assistance_only": 819486,
+        "total": 1706881
+      },
+      {
+        "month": "2024-04",
+        "cash_assistance": 552409,
+        "ssi": 339118,
+        "nursing_home": 34280,
+        "medical_assistance_only": 800601,
+        "total": 1692128
+      },
+      {
+        "month": "2024-05",
+        "cash_assistance": 561639,
+        "ssi": 338640,
+        "nursing_home": 34494,
+        "medical_assistance_only": 779063,
+        "total": 1679342
+      },
+      {
+        "month": "2024-06",
+        "cash_assistance": 570461,
+        "ssi": 337360,
+        "nursing_home": 34881,
+        "medical_assistance_only": 750730,
+        "total": 1658551
+      },
+      {
+        "month": "2024-07",
+        "cash_assistance": 572986,
+        "ssi": 336605,
+        "nursing_home": 34745,
+        "medical_assistance_only": 733935,
+        "total": 1643526
+      },
+      {
+        "month": "2024-08",
+        "cash_assistance": 586239,
+        "ssi": 335856,
+        "nursing_home": 34622,
+        "medical_assistance_only": 721443,
+        "total": 1643538
+      },
+      {
+        "month": "2024-09",
+        "cash_assistance": 579712,
+        "ssi": 335705,
+        "nursing_home": 34594,
+        "medical_assistance_only": 721676,
+        "total": 1637093
+      },
+      {
+        "month": "2024-10",
+        "cash_assistance": 585320,
+        "ssi": 335585,
+        "nursing_home": 34717,
+        "medical_assistance_only": 704212,
+        "total": 1625117
+      },
+      {
+        "month": "2024-11",
+        "cash_assistance": 594912,
+        "ssi": 335448,
+        "nursing_home": 34717,
+        "medical_assistance_only": 697055,
+        "total": 1627415
+      },
+      {
+        "month": "2024-12",
+        "cash_assistance": 585715,
+        "ssi": 335745,
+        "nursing_home": 34554,
+        "medical_assistance_only": 690292,
+        "total": 1611752
+      },
+      {
+        "month": "2025-01",
+        "cash_assistance": 580650,
+        "ssi": 334890,
+        "nursing_home": 34525,
+        "medical_assistance_only": 691285,
+        "total": 1606825
+      },
+      {
+        "month": "2025-02",
+        "cash_assistance": 585371,
+        "ssi": 334156,
+        "nursing_home": 34770,
+        "medical_assistance_only": 685993,
+        "total": 1605520
+      },
+      {
+        "month": "2025-03",
+        "cash_assistance": 580214,
+        "ssi": 333181,
+        "nursing_home": 34878,
+        "medical_assistance_only": 685292,
+        "total": 1598687
+      },
+      {
+        "month": "2025-04",
+        "cash_assistance": 589360,
+        "ssi": 332764,
+        "nursing_home": 34407,
+        "medical_assistance_only": 683102,
+        "total": 1605226
+      },
+      {
+        "month": "2025-05",
+        "cash_assistance": 596867,
+        "ssi": 332616,
+        "nursing_home": 32744,
+        "medical_assistance_only": 688022,
+        "total": 1617505
+      },
+      {
+        "month": "2025-06",
+        "cash_assistance": 593715,
+        "ssi": 331641,
+        "nursing_home": 32085,
+        "medical_assistance_only": 673509,
+        "total": 1598865
+      },
+      {
+        "month": "2025-07",
+        "cash_assistance": 590583,
+        "ssi": 329934,
+        "nursing_home": 31807,
+        "medical_assistance_only": 656980,
+        "total": 1577497
+      },
+      {
+        "month": "2025-08",
+        "cash_assistance": 594762,
+        "ssi": 329194,
+        "nursing_home": 31338,
+        "medical_assistance_only": 640699,
+        "total": 1564655
+      },
+      {
+        "month": "2025-09",
+        "cash_assistance": 588564,
+        "ssi": 328507,
+        "nursing_home": 32018,
+        "medical_assistance_only": 624077,
+        "total": 1541148
+      },
+      {
+        "month": "2025-10",
+        "cash_assistance": 598187,
+        "ssi": 327453,
+        "nursing_home": 32464,
+        "medical_assistance_only": 614970,
+        "total": 1540610
+      },
+      {
+        "month": "2025-11",
+        "cash_assistance": 595232,
+        "ssi": 326341,
+        "nursing_home": 32924,
+        "medical_assistance_only": 602573,
+        "total": 1524146
+      },
+      {
+        "month": "2025-12",
+        "cash_assistance": 576991,
+        "ssi": 327047,
+        "nursing_home": 32689,
+        "medical_assistance_only": 589824,
+        "total": 1493862
+      },
+      {
+        "month": "2026-01",
+        "cash_assistance": 584518,
+        "ssi": 325933,
+        "nursing_home": 33126,
+        "medical_assistance_only": 583565,
+        "total": 1494016
+      },
+      {
+        "month": "2026-02",
+        "cash_assistance": 583658,
+        "ssi": 325606,
+        "nursing_home": 33223,
+        "medical_assistance_only": 569717,
+        "total": 1478981
+      },
+      {
+        "month": "2026-03",
+        "cash_assistance": 573307,
+        "ssi": 324717,
+        "nursing_home": 33201,
+        "medical_assistance_only": 554334,
+        "total": 1452358
+      },
+      {
+        "month": "2026-04",
+        "cash_assistance": 574288,
+        "ssi": 323362,
+        "nursing_home": 33126,
+        "medical_assistance_only": 539557,
+        "total": 1437207
+      },
+      {
+        "month": "2026-05",
+        "cash_assistance": 583757,
+        "ssi": 323113,
+        "nursing_home": 32741,
+        "medical_assistance_only": 528490,
+        "total": 1435360
+      },
+      {
+        "month": "2026-06",
+        "cash_assistance": 562379,
+        "ssi": 321513,
+        "nursing_home": 32282,
+        "medical_assistance_only": 519425,
+        "total": 1403317
+      },
+      {
+        "month": "2026-07",
+        "cash_assistance": 574197,
+        "ssi": 320800,
+        "nursing_home": 32408,
+        "medical_assistance_only": 515249,
+        "total": 1410246
+      },
+      {
+        "month": "2026-08",
+        "cash_assistance": 571702,
+        "ssi": 320988,
+        "nursing_home": 32286,
+        "medical_assistance_only": 508347,
+        "total": 1401037
+      }
+    ],
+    "csv_row_order_first_last": [
+      "12/01/2025",
+      "08/01/2026"
+    ]
+  },
+  "5awp-wfkt": {
+    "source_csv": "5awp-wfkt_2026-10-24.csv",
+    "sha256": "18d3a3ed986d593330944b83c12777ecff79992957003bfd5ffd570072a5bb7a",
+    "meta": {
+      "file": "5awp-wfkt_metadata_2026-10-24.json",
+      "name": "Cash Assistance, Medicaid, and SNAP - Borough/Community District Report",
+      "attribution": "Human Resources Administration (HRA)",
+      "agency": "Human Resources Administration (HRA)",
+      "update_frequency": "Quarterly",
+      "date_made_public": "12/12/2023",
+      "rowsUpdatedAt_epoch": 1792160843,
+      "rowsUpdatedAt_utc": "2026-10-16T14:27:23Z",
+      "viewLastModified_utc": "2026-10-16T14:27:22Z",
+      "createdAt_utc": "2023-08-15T16:20:20Z",
+      "license": null,
+      "licenseId": null,
+      "category": "Social Services",
+      "tags": [
+        "borough consultation",
+        "cash assistance",
+        "ca",
+        "public assistance",
+        "cash assistance recipients",
+        "cd",
+        "community district",
+        "snap",
+        "snap benefits",
+        "snap households",
+        "snap recipients",
+        "ma",
+        "ma only",
+        "medicaid",
+        "food"
+      ],
+      "columns": [
+        [
+          "month",
+          "Month",
+          "calendar_date"
+        ],
+        [
+          "borough",
+          "Borough",
+          "text"
+        ],
+        [
+          "community_district",
+          "Community District (CD)",
+          "text"
+        ],
+        [
+          "bc_snap_recipients",
+          "Borough Consultation Total SNAP Recipients",
+          "number"
+        ],
+        [
+          "bc_snap_households",
+          "Borough Consultation Total SNAP Households",
+          "number"
+        ],
+        [
+          "bc_ca_recipients",
+          "Borough Consultation Total Cash Assistance Recipients",
+          "number"
+        ],
+        [
+          "bc_ca_cases",
+          "Borough Consultation Total Cash Assistance Cases",
+          "number"
+        ],
+        [
+          "bc_ma_only_enrollees",
+          "Borough Consultation Total Medicaid Only Enrollees",
+          "number"
+        ],
+        [
+          "bc_total_ma_enrollees",
+          "Borough Consultation Total Medicaid Enrollees",
+          "number"
+        ]
+      ],
+      "description": "Population of individuals and households receiving Supplemental Nutrition Assistance Program (SNAP), Cash Assistance (CA), or Medicaid Benefits (MA) as shown on the Borough Consultation Report."
+    },
+    "rows_total": 1947,
+    "csv_columns": [
+      "Month",
+      "Borough",
+      "Community District (CD)",
+      "Borough Consultation Total SNAP Recipients",
+      "Borough Consultation Total SNAP Households",
+      "Borough Consultation Total Cash Assistance Recipients",
+      "Borough Consultation Total Cash Assistance Cases",
+      "Borough Consultation Total Medicaid Only Enrollees",
+      "Borough Consultation Total Medicaid Enrollees"
+    ],
+    "months_n": 33,
+    "first_month": "2018-09",
+    "last_month": "2026-09",
+    "rows_per_month_counts": {
+      "59": 33
+    },
+    "cd_code_prefix_to_borough": {
+      "B": [
+        "Bronx"
+      ],
+      "K": [
+        "Brooklyn"
+      ],
+      "M": [
+        "Manhattan"
+      ],
+      "Q": [
+        "Queens"
+      ],
+      "S": [
+        "Staten Island",
+        "Staten_Island"
+      ]
+    },
+    "latest_month_rows": 59,
+    "latest_month_sum_total_ma_enrollees": 1396345,
+    "latest_month_sum_ma_only_enrollees": 505731,
+    "compare_with_33db_same_month": {
+      "2025-12": {
+        "sum_cd_total_ma": 1493861,
+        "33db_total": 1493862
+      },
+      "2026-03": {
+        "sum_cd_total_ma": 1452358,
+        "33db_total": 1452358
+      },
+      "2026-06": {
+        "sum_cd_total_ma": 1403317,
+        "33db_total": 1403317
+      }
+    },
+    "join_cb_cd": {
+      "cd_keys_n": 59,
+      "dental_cb_keys_n": 61,
+      "cd_without_dental_record": [],
+      "dental_cb_without_cd_row": {
+        "164": 1,
+        "483": 1
+      },
+      "dental_records_matched_to_cd": 4152,
+      "dental_records_not_matched": 2
+    },
+    "by_cd_latest_month": [
+      {
+        "cb": "101",
+        "dental_records": 73,
+        "ma_enrollees": 2835,
+        "enrollees_per_dental_record": 38.8
+      },
+      {
+        "cb": "102",
+        "dental_records": 75,
+        "ma_enrollees": 2637,
+        "enrollees_per_dental_record": 35.2
+      },
+      {
+        "cb": "103",
+        "dental_records": 60,
+        "ma_enrollees": 30984,
+        "enrollees_per_dental_record": 516.4
+      },
+      {
+        "cb": "104",
+        "dental_records": 40,
+        "ma_enrollees": 12732,
+        "enrollees_per_dental_record": 318.3
+      },
+      {
+        "cb": "105",
+        "dental_records": 427,
+        "ma_enrollees": 6058,
+        "enrollees_per_dental_record": 14.2
+      },
+      {
+        "cb": "106",
+        "dental_records": 193,
+        "ma_enrollees": 6279,
+        "enrollees_per_dental_record": 32.5
+      },
+      {
+        "cb": "107",
+        "dental_records": 88,
+        "ma_enrollees": 15970,
+        "enrollees_per_dental_record": 181.5
+      },
+      {
+        "cb": "108",
+        "dental_records": 219,
+        "ma_enrollees": 7604,
+        "enrollees_per_dental_record": 34.7
+      },
+      {
+        "cb": "109",
+        "dental_records": 21,
+        "ma_enrollees": 16890,
+        "enrollees_per_dental_record": 804.3
+      },
+      {
+        "cb": "110",
+        "dental_records": 25,
+        "ma_enrollees": 24013,
+        "enrollees_per_dental_record": 960.5
+      },
+      {
+        "cb": "111",
+        "dental_records": 27,
+        "ma_enrollees": 32781,
+        "enrollees_per_dental_record": 1214.1
+      },
+      {
+        "cb": "112",
+        "dental_records": 92,
+        "ma_enrollees": 36579,
+        "enrollees_per_dental_record": 397.6
+      },
+      {
+        "cb": "201",
+        "dental_records": 31,
+        "ma_enrollees": 35997,
+        "enrollees_per_dental_record": 1161.2
+      },
+      {
+        "cb": "202",
+        "dental_records": 15,
+        "ma_enrollees": 17605,
+        "enrollees_per_dental_record": 1173.7
+      },
+      {
+        "cb": "203",
+        "dental_records": 13,
+        "ma_enrollees": 34869,
+        "enrollees_per_dental_record": 2682.2
+      },
+      {
+        "cb": "204",
+        "dental_records": 22,
+        "ma_enrollees": 43970,
+        "enrollees_per_dental_record": 1998.6
+      },
+      {
+        "cb": "205",
+        "dental_records": 30,
+        "ma_enrollees": 43197,
+        "enrollees_per_dental_record": 1439.9
+      },
+      {
+        "cb": "206",
+        "dental_records": 19,
+        "ma_enrollees": 32862,
+        "enrollees_per_dental_record": 1729.6
+      },
+      {
+        "cb": "207",
+        "dental_records": 37,
+        "ma_enrollees": 39190,
+        "enrollees_per_dental_record": 1059.2
+      },
+      {
+        "cb": "208",
+        "dental_records": 48,
+        "ma_enrollees": 16951,
+        "enrollees_per_dental_record": 353.1
+      },
+      {
+        "cb": "209",
+        "dental_records": 32,
+        "ma_enrollees": 45508,
+        "enrollees_per_dental_record": 1422.1
+      },
+      {
+        "cb": "210",
+        "dental_records": 40,
+        "ma_enrollees": 19366,
+        "enrollees_per_dental_record": 484.1
+      },
+      {
+        "cb": "211",
+        "dental_records": 57,
+        "ma_enrollees": 24046,
+        "enrollees_per_dental_record": 421.9
+      },
+      {
+        "cb": "212",
+        "dental_records": 22,
+        "ma_enrollees": 38875,
+        "enrollees_per_dental_record": 1767.0
+      },
+      {
+        "cb": "301",
+        "dental_records": 68,
+        "ma_enrollees": 25396,
+        "enrollees_per_dental_record": 373.5
+      },
+      {
+        "cb": "302",
+        "dental_records": 70,
+        "ma_enrollees": 12805,
+        "enrollees_per_dental_record": 182.9
+      },
+      {
+        "cb": "303",
+        "dental_records": 19,
+        "ma_enrollees": 27844,
+        "enrollees_per_dental_record": 1465.5
+      },
+      {
+        "cb": "304",
+        "dental_records": 16,
+        "ma_enrollees": 15350,
+        "enrollees_per_dental_record": 959.4
+      },
+      {
+        "cb": "305",
+        "dental_records": 25,
+        "ma_enrollees": 51381,
+        "enrollees_per_dental_record": 2055.2
+      },
+      {
+        "cb": "306",
+        "dental_records": 60,
+        "ma_enrollees": 8964,
+        "enrollees_per_dental_record": 149.4
+      },
+      {
+        "cb": "307",
+        "dental_records": 47,
+        "ma_enrollees": 16165,
+        "enrollees_per_dental_record": 343.9
+      },
+      {
+        "cb": "308",
+        "dental_records": 18,
+        "ma_enrollees": 16467,
+        "enrollees_per_dental_record": 914.8
+      },
+      {
+        "cb": "309",
+        "dental_records": 30,
+        "ma_enrollees": 15865,
+        "enrollees_per_dental_record": 528.8
+      },
+      {
+        "cb": "310",
+        "dental_records": 115,
+        "ma_enrollees": 15240,
+        "enrollees_per_dental_record": 132.5
+      },
+      {
+        "cb": "311",
+        "dental_records": 80,
+        "ma_enrollees": 29537,
+        "enrollees_per_dental_record": 369.2
+      },
+      {
+        "cb": "312",
+        "dental_records": 89,
+        "ma_enrollees": 30805,
+        "enrollees_per_dental_record": 346.1
+      },
+      {
+        "cb": "313",
+        "dental_records": 50,
+        "ma_enrollees": 29642,
+        "enrollees_per_dental_record": 592.8
+      },
+      {
+        "cb": "314",
+        "dental_records": 84,
+        "ma_enrollees": 24288,
+        "enrollees_per_dental_record": 289.1
+      },
+      {
+        "cb": "315",
+        "dental_records": 172,
+        "ma_enrollees": 25180,
+        "enrollees_per_dental_record": 146.4
+      },
+      {
+        "cb": "316",
+        "dental_records": 6,
+        "ma_enrollees": 31336,
+        "enrollees_per_dental_record": 5222.7
+      },
+      {
+        "cb": "317",
+        "dental_records": 21,
+        "ma_enrollees": 29936,
+        "enrollees_per_dental_record": 1425.5
+      },
+      {
+        "cb": "318",
+        "dental_records": 66,
+        "ma_enrollees": 27093,
+        "enrollees_per_dental_record": 410.5
+      },
+      {
+        "cb": "401",
+        "dental_records": 93,
+        "ma_enrollees": 23510,
+        "enrollees_per_dental_record": 252.8
+      },
+      {
+        "cb": "402",
+        "dental_records": 55,
+        "ma_enrollees": 12400,
+        "enrollees_per_dental_record": 225.5
+      },
+      {
+        "cb": "403",
+        "dental_records": 87,
+        "ma_enrollees": 18878,
+        "enrollees_per_dental_record": 217.0
+      },
+      {
+        "cb": "404",
+        "dental_records": 89,
+        "ma_enrollees": 21068,
+        "enrollees_per_dental_record": 236.7
+      },
+      {
+        "cb": "405",
+        "dental_records": 75,
+        "ma_enrollees": 15156,
+        "enrollees_per_dental_record": 202.1
+      },
+      {
+        "cb": "406",
+        "dental_records": 146,
+        "ma_enrollees": 12313,
+        "enrollees_per_dental_record": 84.3
+      },
+      {
+        "cb": "407",
+        "dental_records": 198,
+        "ma_enrollees": 37497,
+        "enrollees_per_dental_record": 189.4
+      },
+      {
+        "cb": "408",
+        "dental_records": 83,
+        "ma_enrollees": 20815,
+        "enrollees_per_dental_record": 250.8
+      },
+      {
+        "cb": "409",
+        "dental_records": 50,
+        "ma_enrollees": 20013,
+        "enrollees_per_dental_record": 400.3
+      },
+      {
+        "cb": "410",
+        "dental_records": 46,
+        "ma_enrollees": 16016,
+        "enrollees_per_dental_record": 348.2
+      },
+      {
+        "cb": "411",
+        "dental_records": 125,
+        "ma_enrollees": 11164,
+        "enrollees_per_dental_record": 89.3
+      },
+      {
+        "cb": "412",
+        "dental_records": 45,
+        "ma_enrollees": 50466,
+        "enrollees_per_dental_record": 1121.5
+      },
+      {
+        "cb": "413",
+        "dental_records": 50,
+        "ma_enrollees": 22788,
+        "enrollees_per_dental_record": 455.8
+      },
+      {
+        "cb": "414",
+        "dental_records": 29,
+        "ma_enrollees": 29680,
+        "enrollees_per_dental_record": 1023.4
+      },
+      {
+        "cb": "501",
+        "dental_records": 80,
+        "ma_enrollees": 33950,
+        "enrollees_per_dental_record": 424.4
+      },
+      {
+        "cb": "502",
+        "dental_records": 69,
+        "ma_enrollees": 16864,
+        "enrollees_per_dental_record": 244.4
+      },
+      {
+        "cb": "503",
+        "dental_records": 90,
+        "ma_enrollees": 12675,
+        "enrollees_per_dental_record": 140.8
+      }
+    ],
+    "by_cd_extremes": {
+      "lowest_5_enrollees_per_record": [
+        {
+          "cb": "105",
+          "dental_records": 427,
+          "ma_enrollees": 6058,
+          "enrollees_per_dental_record": 14.2
+        },
+        {
+          "cb": "106",
+          "dental_records": 193,
+          "ma_enrollees": 6279,
+          "enrollees_per_dental_record": 32.5
+        },
+        {
+          "cb": "108",
+          "dental_records": 219,
+          "ma_enrollees": 7604,
+          "enrollees_per_dental_record": 34.7
+        },
+        {
+          "cb": "102",
+          "dental_records": 75,
+          "ma_enrollees": 2637,
+          "enrollees_per_dental_record": 35.2
+        },
+        {
+          "cb": "101",
+          "dental_records": 73,
+          "ma_enrollees": 2835,
+          "enrollees_per_dental_record": 38.8
+        }
+      ],
+      "highest_5_enrollees_per_record": [
+        {
+          "cb": "212",
+          "dental_records": 22,
+          "ma_enrollees": 38875,
+          "enrollees_per_dental_record": 1767.0
+        },
+        {
+          "cb": "204",
+          "dental_records": 22,
+          "ma_enrollees": 43970,
+          "enrollees_per_dental_record": 1998.6
+        },
+        {
+          "cb": "305",
+          "dental_records": 25,
+          "ma_enrollees": 51381,
+          "enrollees_per_dental_record": 2055.2
+        },
+        {
+          "cb": "203",
+          "dental_records": 13,
+          "ma_enrollees": 34869,
+          "enrollees_per_dental_record": 2682.2
+        },
+        {
+          "cb": "316",
+          "dental_records": 6,
+          "ma_enrollees": 31336,
+          "enrollees_per_dental_record": 5222.7
+        }
+      ]
+    },
+    "by_borough_latest_month": {
+      "Manhattan": {
+        "dental_records_in_matched_cd": 1340,
+        "ma_enrollees": 195362,
+        "enrollees_per_dental_record": 145.8
+      },
+      "Bronx": {
+        "dental_records_in_matched_cd": 366,
+        "ma_enrollees": 392436,
+        "enrollees_per_dental_record": 1072.2
+      },
+      "Brooklyn": {
+        "dental_records_in_matched_cd": 1036,
+        "ma_enrollees": 433294,
+        "enrollees_per_dental_record": 418.2
+      },
+      "Queens": {
+        "dental_records_in_matched_cd": 1171,
+        "ma_enrollees": 311764,
+        "enrollees_per_dental_record": 266.2
+      },
+      "Staten Island": {
+        "dental_records_in_matched_cd": 239,
+        "ma_enrollees": 63489,
+        "enrollees_per_dental_record": 265.6
+      }
+    }
+  },
+  "cross": {
+    "enrollees_latest_month": "2026-08",
+    "enrollees_latest_total": 1401037,
+    "dental_records_i595": 4159,
+    "enrollees_per_dental_record": 336.9,
+    "note": "rapport indicatif entre deux jeux de millesimes differents (registre i595 publie le 30/01/2020 ; inscrits mensuels HRA) ; a ne pas presenter comme un ratio d'acces"
+  }
+}
